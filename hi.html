@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src=".//javaScript.js"></script> -->
+    <title>Document</title>
+
+
+    <style>
+        .tooltip-row {
+    position: relative;
+}
+
+.tooltip-image-container {
+    visibility: hidden;
+    opacity: 0;
+    width: 20px; /* Adjust this to the width of your image */
+    height: 20px; /* Adjust this to the height of your image */
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    /* transform: translateY(-50%); */
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.tooltip-row:hover .tooltip-image-container {
+    visibility: visible;
+    opacity: 1;
+}
+    </style>
+
+</head>
+<table class="table">
+    <tbody>
+        <tr class="tooltip-row" data-tooltip-text="Tooltip text 1">
+            <td>Row 1</td>
+            <td class="tooltip-image-container">
+                <img src="image/play.png" alt="Play" class="tooltip-image">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</html>

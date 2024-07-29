@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Game</title>
+</head>
+<body>
+    <h1>RPG SJB Gaming</h1>
+    <div id="game-menu">
+        <button onclick="showScores()">1 - Consulter Le tableau de scores</button>
+        <button onclick="viewCharacter()">2 - Visualiser un personnage</button>
+        <button onclick="attackMonster()">3 - Attaquer un monstre</button>
+        <button onclick="attackPlayer()">4 - Attaquer un autre joueur</button>
+        <button onclick="quitGame()">0 - Quitter le jeux</button>
+    </div>
+    <div id="game-output"></div>
+
+    <script>
+        let monID = 10;
+
+        // Initialize IndexedDB
+        let db;
+        const request = indexedDB.open("RPGDatabase", 1);
+
+        request.onupgradeneeded = function(event) {
+            db = event.target.result;
+
+            const joueursStore = db.createObjectStore("Joueurs", { keyPath: "id" });
+            joueursStore.createIndex("xp", "xp", { unique: false });
+
+            const classesStore = db.createObjectStore("Classes", { keyPath: "id" });
+            const armesStore = db.createObjectStore("Armes", { keyPath: "id" });
+            const monstresStore = db.createObjectStore("Monstres", { keyPath: "id" });
+
+            // Add initial data
+            joueursStore.transaction.oncomplete = function() {
+                const joueursObjectStore = db.transaction("Joueurs", "readwrite").objectStore("Joueurs");
+                joueursObjectStore.add({ id: 1, pseudo: "Player1", xp: 100, class_id: 1, arme_id: null });
+                joueursObjectStore.add({ id: 2, pseudo: "Player2", xp: 150, class_id: 2, arme_id: 1 });
+            };
+
+            classesStore.transaction.oncomplete = function() {
+                const classesObjectStore = db.transaction("Classes", "readwrite").objectStore("Classes");
+                classesObjectStore.add({ id: 1, nom: "Warrior", description: "Strong and brave" });
+                classesObjectStore.add({ id: 2, nom: "Mage", description: "Wise and powerful" });
+            };
+
+            armesStore.transaction.oncomplete = function() {
+                const armesObjectStore = db.transaction("Armes", "readwrite").objectStore("Armes");
+                armesObjectStore.add({ id: 1, nom: "Sword", ATK: 10, xpMin: 50 });
+                armesObjectStore.add({ id: 2, nom: "Axe", ATK: 15, xpMin: 100 });
+            };
+
+            monstresStore.transaction.oncomplete = function() {
+                const monstresObjectStore = db.transaction("Monstres", "readwrite").objectStore("Monstres");
+                monstresObjectStore.add({ id: 1, nom: "Goblin", HP: 30, ATK: 5, probabilite: 50 });
+                monstresObjectStore.add({ id: 2, nom: "Orc", HP: 50, ATK: 10, probabilite: 30 });
+            };
+        };
+
+        request.onsuccess = function(event) {
+            db = event.target.result;
+        };
+
+        request.onerror = function(event) {
+            console.log("Error opening database", event);
+        };
+
+        function showScores() {
+            const transaction = db.transaction("Joueurs", "readonly");
+            const objectStore = transaction.objectStore("Joueurs");
+            const index = objectStore.index("xp");
+
+            index.getAll().onsuccess = function(event) {
+                const result = event.target.result;
+                let output = "<h2>Tableau des scores</h2><ul>";
+                result.sort((a, b) => b.xp - a.xp).forEach(player => {
+                    output += `<li>${player.id} - ${player.pseudo}: ${player.xp} XP</li>`;
+                });
+                output += "</ul>";
+                document.getElementById("game-output").innerHTML = output;
+            };
+        }
+
+        function viewCharacter() {
+            const transaction = db.transaction(["Joueurs", "Classes", "Armes"], "readonly");
+            const joueursStore = transaction.objectStore("Joueurs");
+            const classesStore = transaction.objectStore("Classes");
+            const armesStore = transaction.objectStore("Armes");
+
+            joueursStore.get(monID).onsuccess = function(event) {
+                const joueur = event.target.result;
+                classesStore.get(joueur.class_id).onsuccess = function(event) {
+                    const classe = event.target.result;
+                    let output = `<h2>${joueur.pseudo} - ${joueur.xp} XP</h2>`;
+                    output += `<p>Class: ${classe.nom} - ${classe.description}</p>`;
+                    if (joueur.arme_id) {
+                        armesStore.get(joueur.arme_id).onsuccess = function(event) {
+                            const arme = event.target.result;
+                            output += `<p>Arme: ${arme.nom} - ATK: ${arme.ATK}</p>`;
+                            document.getElementById("game-output").innerHTML = output;
+                        };
+                    } else {
+                        document.getElementById("game-output").innerHTML = output;
+                    }
+                };
+            };
+        }
+
+        function attackMonster() {
+            const transaction = db.transaction(["Joueurs", "Monstres", "Armes"], "readonly");
+            const joueursStore = transaction.objectStore("Joueurs");
+            const monstresStore = transaction.objectStore("Monstres");
+            const armesStore = transaction.objectStore("Armes");
+
+            monstresStore.getAll().onsuccess = function(event) {
+                const listeMonstres = event.target.result;
+                let somme = listeMonstres.reduce((sum, monstre) => sum + monstre.probabilite, 0);
+                let aleat = Math.floor(Math.random() * somme);
+                let adversaire = null;
+
+                for (let monstre of listeMonstres) {
+                    aleat -= monstre.probabilite;
+                    if (aleat <= 0) {
+                        adversaire = monstre;
+                        break;
+                    }
+                }
+
+                joueursStore.get(monID).onsuccess = function(event) {
+                    let joueur = event.target.result;
+                    let degatArme = 0;
+                    if (joueur.arme_id) {
+                        armesStore.get(joueur.arme_id).onsuccess = function(event) {
+                            const arme = event.target.result;
+                            degatArme = arme.ATK;
+                            commenceCombat(joueur, adversaire, degatArme);
+                        };
+                    } else {
+                        commenceCombat(joueur, adversaire, degatArme);
+                    }
+                };
+            };
+        }
+
+        function commenceCombat(joueur, monstre, degatArme) {
+            let output = `<h2>Combat contre ${monstre.nom}</h2>`;
+            while (joueur.HP > 0 && monstre.HP > 0) {
+                const degat = Math.round((5 + degatArme) * Math.random());
+                monstre.HP -= degat;
+                output += `<p>Vous infligez ${degat} dégâts. Il reste ${monstre.HP} HP à ${monstre.nom}.</p>`;
+                if (monstre.HP <= 0) {
+                    output += `<p>Vous avez vaincu ${monstre.nom}!</p>`;
+                    joueur.xp += monstre.ATK;
+                    break;
+                }
+
+                const degatMonstre = Math.round(monstre.ATK * Math.random());
+                joueur.HP -= degatMonstre;
+                output += `<p>${monstre.nom} inflige ${degatMonstre} dégâts. Il vous reste ${joueur.HP} HP.</p>`;
+                if (joueur.HP <= 0) {
+                    output += `<p>Vous êtes mort!</p>`;
+                    break;
+                }
+            }
+
+            const transaction = db.transaction("Joueurs", "readwrite");
+            const joueursStore = transaction.objectStore("Joueurs");
+            joueursStore.put(joueur);
+            document.getElementById("game-output").innerHTML = output;
+        }
+
+        function attackPlayer() {
+            const transaction = db.transaction(["Joueurs", "Armes"], "readonly");
+            const joueursStore = transaction.objectStore("Joueurs");
+            const armesStore = transaction.objectStore("Armes");
+
+            joueursStore.getAll().onsuccess = function(event) {
+                const listeJoueurs = event.target.result.filter(j => j.id !== monID);
+                const adversaire = listeJoueurs[Math.floor(Math.random() * listeJoueurs.length)];
+                joueursStore.get(monID).onsuccess = function(event) {
+                    let joueur = event.target.result;
+                    commenceDuel(joueur, adversaire, armesStore);
+                };
+            };
+        }
+
+        function commenceDuel(joueur, adversaire, armesStore) {
+            joueur.HP = 1000;
+            adversaire.HP = 1000;
+
+            let output = `<h2>Duel contre ${adversaire.pseudo}</h2>`;
+            let degatArmeJoueur = 0;
+            let degatArmeAdversaire = 

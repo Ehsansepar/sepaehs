@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre, Ciseaux, Papier</title>
+
+</head>
+<body>
+
+    <script>
+        let playerScore = 0;
+        let computerScore = 0;
+
+        function Click(show) {
+            document.getElementById("hello").innerHTML += show;
+        }
+        const option = ['pierre', 'ciseaux', 'papier'];
+
+        var pierre = document.getElementById('pierre');
+        var ciseaux = document.getElementById('ciseaux');
+        var papier = document.getElementById('papier');
+
+        
+
+        // function playRound(playerChoice) {
+        //     const choices = ['Pierre', 'Ciseaux', 'Papier'];
+        //     const randomNumber = Math.floor((Math.random() * 3));
+        //     const computerChoice = choices[randomNumber];
+
+        //     alert(computerChoice);
+
+           // return;
+
+
+    </script>
+    
+    <p id="hello"></p>
+    <input id="">
+
+    <button id="pierre" onclick="Click('Pierre')">Pierre</button>
+    <button id="ciseaux" onclick="Click('Ciseaux')">Ciseaux</button>
+    <button id="papier" onclick="Click('Papier')">Papier</button>
+
+

@@ -1,0 +1,46 @@
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 3px solid black;
+}
+
+.row1 {
+    background-color: rgb(153, 226, 43);
+    border: none;
+}
+.row1B {
+    background-color: rgb(153, 226, 43);
+    width: 150px;
+}
+.row1C {
+    background-color: rgb(153, 226, 43);
+    width: 150px;
+}
+.row1D {
+    background-color: rgb(153, 226, 43);
+    width: 150px;
+}
+
+
+.row2 {
+    background-color: rgb(238, 238, 135);
+    border: none;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 35px;
+}
+.row2B {
+    background-color: rgb(238, 238, 135);
+    width: 150px;
+}
+.row2C {
+    background-color:rgb(238, 238, 135);
+    width: 150px;
+}
+.row2D {
+    background-color: rgb(238, 238, 135);
+    width: 150px;
+}
+

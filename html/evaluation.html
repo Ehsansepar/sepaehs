@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évaluation</title>
+
+    <h1>Évaluation</h1>
+
+    <style>
+        body {
+            font-weight: bold;
+            text-align: center;
+        }
+        table {
+            border: 1px solid black;
+            
+        }
+        th, td {
+            border: 1px solid black;
+            width: 5em;
+            height: 3em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .I, .III, .V, .VII, .IX {
+            background-color: rgb(255, 122, 73);
+        }
+        .I {
+            width: 100px;
+        }
+
+        .II, .IV, .VI, .VIII, .X  {
+            background-color: rgb(93, 93, 255);
+        }
+        .abc {
+            background-color: rgb(177, 177, 177);
+            color: white;
+            font-weight: bold;
+        }
+        caption {
+            margin-bottom: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <table>
+        <caption>SEPAR Ehsan 4 TC</caption>
+
+        <tr class="abc">
+            <th> </th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+        </tr>
+        
+        <tr>
+            <td class="abc">1</td>
+            <td class="I" rowspan="3">I</td>
+            <td class="II">II</td>
+            <td class="III" colspan="2">III</td>
+        </tr>
+
+        <tr>
+            <td class="abc">2</td>
+            <td class="IV" colspan="3">IV</td>
+        </tr>
+
+        <tr>
+            <td class="abc">3</td>
+            <td class="V">V</td>
+            <td class="VI">VI</td>
+            <td class="VII">VII</td>
+        </tr>
+
+        <tr>
+            <td class="abc">4</td>
+            <td class="VIII" colspan="3" rowspan="2">VIII</td>
+            <td class="IX">IX</td>
+        </tr>
+
+        <tr>
+            <td class="abc">5</td>
+            <td class="X">X</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
