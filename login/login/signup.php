@@ -6,7 +6,11 @@ $conn = mysqli_connect("mysql-sepaehs.alwaysdata.net", "sepaehs", "onuq7256", "s
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-$activation_code = bin2hex(random_bytes(16)); 
+    session_start();
+    $activation_code = bin2hex(random_bytes(16)); 
+    $_SESSION['code_activate'] = $activation_code;
+
+
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
 
@@ -17,7 +21,9 @@ mysqli_query($conn, $sql);
 
 $to = $_POST['email'];
 $subject = "Activate Your Account";
-$activation_link = "http://sepaehs.alwaysdata.net/login/activate.php?code=" . $activation_code;
+// $activation_link = "http://sepaehs.alwaysdata.net/login/activate.php?code=" . $activation_code;
+$activation_link = "http://sepaehs.alwaysdata.net/login/extra_staf/loading_page_when_signup.php?code=" . $activation_code;
+
 $message = '
 <html>
 <head>
@@ -59,9 +65,6 @@ $headers .= "From: sepaehs@sjb-liege.org";
 
 mail($to, $subject, $message, $headers);
 
-header("Location: loading.php?email=" . urlencode($_POST['email']));
-    exit();
-
 
 }
 
@@ -75,7 +78,7 @@ header("Location: loading.php?email=" . urlencode($_POST['email']));
     <title>Sign Up</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+<body class="bg-gray-100">
 
     <div class="min-h-screen flex items-center justify-center">
         <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">

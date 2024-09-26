@@ -52,6 +52,5 @@
         // Check activation status every 5 seconds
         setInterval(checkActivation, 5000);
     </script>
-    
 </body>
 </html>
