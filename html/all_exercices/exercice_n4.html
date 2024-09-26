@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice n°4 Supplémentaire</title>
+
+    <style>
+
+        body {
+            
+            
+            background-color: rgb(255, 212, 120);
+        }
+        table {
+            border: 3px solid rgb(47, 200, 255);
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+        }
+        th, td {
+            border: 2px solid rgb(47, 200, 255);
+            height: 50px;
+            width: 120px;
+            background-color: white;
+        }
+        .colonne123 {
+            background-color: rgb(182, 227, 255);
+            border-style: dotted;
+            text-align: center;
+            font-weight: bold;
+        }
+        .colonne1 {
+            background-color: rgb(215, 240, 255);
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+    <table>
+        <caption>Exercice Supplémentaire</caption>
+        <caption>Présentation de quelques articles publiés sur OpenWeb</caption>
+        <tr>
+            <th class="colonne123"></th>
+            <th class="colonne123">Débutants</th>
+            <th class="colonne123">Experts</th>
+            <th class="colonne123">Gourous</th>
+        </tr>
+        <tr>
+            <td class="colonne1" rowspan="2">Tristan <br> Nitot</td>
+            <td colspan="2">Introduction à l'accessibilité</td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- <td>Tristan Nitot</td> -->
+            <td colspan="3">Interview de Chantal Laplanche, Responsable <br> Accessibilité Web au Ministère de la Culture </td>
+        </tr>
+
+        <tr>
+            <td class="colonne1" rowspan="2">Laurent <br> Denis</td>
+            <td>Un exemple de feille de style d'impression</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <!-- <td>Laurent Denis</td> -->
+            <td></td>
+            <td colspan="2">Commenter le document de travail W3CXHTML 2</td>
+        </tr>
+
+        <tr>
+            <td class="colonne123"></td>
+            <td class="colonne123">Débutants</td>
+            <td class="colonne123">Experts</td>
+            <td class="colonne123">Gourous</td>
+        </tr>
+
+    </table>    
+</body>
+</html>

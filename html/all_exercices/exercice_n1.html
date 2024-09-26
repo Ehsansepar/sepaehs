@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises l'Horaire 4TC</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-image: url(../../image/exerciseBackIMG.jpg);
+        }
+        table {
+            border: 3px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th, td {
+            border: 1px solid;
+            height: 60px;
+            width: 200px;
+            
+        }
+        .abc {
+            height: 60px;
+            width: 100px;
+            background-color: rgb(201, 251, 249);
+        }
+        .recree {
+            background-color: rgb(130, 246, 149);
+            height: 1px;
+            width: 0px;
+        }
+        .recree1 {
+            background-color: rgb(255, 255, 255);
+            height: 1px;
+        }
+
+
+        .exploit {
+            background-color: aquamarine;
+        }
+        .math {
+            background-color: rgb(235, 56, 56);
+            color: white;
+            font-weight: bold;
+        }
+        .anglais {
+            background-color: rgb(68, 68, 230);
+            font-weight: bold;
+            color: white;
+        }
+        .geographie {
+            background-color: rgb(212, 151, 71);
+        }
+        .francais {
+            background-color: rgb(224, 197, 161);
+        }
+        .rattrapageMath {
+            font-weight: bold;
+        }
+        .informatique {
+            background-color: rgb(238, 183, 183);
+        }.histoire {
+            background-color: rgb(155, 6, 6);
+            color: white;
+            font-weight: bold;
+        }
+        .sciences {
+            background-color: rgb(72, 211, 72);
+        }
+        .jourSemaine {
+            background-color: blanchedalmond;
+        }
+        .heurecolor {
+            background-color: rgb(201, 251, 249);
+        }
+        .religion {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercise</h1>
+    
+    <h2>Tableaux</h2>
+
+    <table>
+        <caption>Nouvel Horarie</caption>
+        <tr>
+            <th class="jourSemaine">Heures</th>
+        
+            <th class="jourSemaine">Lundi</th>
+        
+            <th class="jourSemaine">Mardi</th>
+        
+            <th class="jourSemaine">Mercredi</th>
+        
+            <th class="jourSemaine">Jeudi</th>
+        
+            <th class="jourSemaine">Vendredi</th>
+        </tr>
+        
+        <tr class="abc">
+            <td class="heurecolor">8:25</td>
+            <td class="exploit" rowspan="2">Exploitation de Logiciels <br>M. Rodrigues</td>
+            <td class="math">Math <br> Mme Charlier</td>
+            <td class="gym" rowspan="2">Ed. Phys. <br>M. Kreusch</td>
+            <td  class="math">Math <br>Mme Charlier</td>
+            <td class="informatique" rowspan="2">informatique <br>M. Tanier</td>
+        </tr>
+
+        <tr>
+            <td class="heurecolor">9:15</td>
+            <!-- <td class="exploit">Exploitation de Logiciels <br>M. Rodrigues</td> -->
+            <td class="francais">français <br> Mme Honnof</td>
+            <!-- <td class="gym">Ed. Phys. <br>M. Kreusch</td> -->
+            <td class="anglais">Anglais <br>Mme Mperatis</td>
+            <!-- <td class="informatique">informatique <br>M. Tanier</td> -->
+        </tr>
+
+        <tr class="recree">
+            <td class="heurecolor">10:05</td>
+            <td class="" colspan="5">Récréation</td>
+        </tr>
+
+        <tr>
+            <td class="heurecolor">10:20</td>
+            <td class="anglais">Anglais<br>Mme Mperatis</td>
+            <td class="informatique">informatique <br> M. Tanier</td>
+            <td class="sciences">Sciences <br>M. Sanna</td>
+            <td class="exploit">Exploitation de Logiciel <br>Mme Charlier</td>
+            <td class="informatique">informatique <br>M. Tanier</td>
+        </tr>
+        <tr>
+        <td class="heurecolor">11:10</td>
+            <td class="geographie">Géographie<br>Mme Smets</td>
+            <td class="anglais">Anglais <br> Mme Mperatis</td>
+            <td class="math">Math <br>Mme Charlier</td>
+            <td class="histoire">Histoire <br>M. Graulich</td>
+            <td class="francais">Français <br>Mme Honnof</td>
+        </tr>
+            <tr>
+                <td class="heurecolor">12:00</td>
+                <td class="anglais">Anglais<br>Mme Mperatis</td>
+                <td class="rattrapageMath">Rattrapage de Math <br>Mme Scuvie</td>
+                <td class="histoire">Histoire <br>M. Graulich</td>
+                <td class="tempsMidi"><br> </td>
+                <td class="math">Math <br>Mme Charlier</td>
+            </tr>
+
+            <tr>
+                <td class="heurecolor">12:50</td>
+                <td class=""><br></td>
+                <td class="informatique">informatique <br>M. Tanier</td>
+                <td class="" rowspan="6"> <br></td>
+                <td class="geographie">Géographie<br>Mme Smits </td>
+                <td class=""><br></td>
+            </tr>
+
+            <tr>
+                <td class="heurecolor">13:45</td>
+                <td class="francais">Français<br>Mme Honnof</td>
+                <td class="exploit">Exploitation de Logiciel <br>M. Rodrigues</td>
+                <!-- <td class=""> <br></td> -->
+                <td class="math">Math<br>Mme Smits </td>
+                <td class="religion">Religion<br>M. Graulich</td>
+            </tr>
+            
+            <tr class="recree">
+                <td class="heurecolor">14:35</td>
+                <td colspan="2">Récréation</td>
+                <td colspan="2">Récréation</td>
+            </tr>
+            
+            <tr>
+                <td class="heurecolor">14:50</td>
+                <td class="" rowspan="3"><br> </td>
+                <td class="religion">Religion <br>M. Graulich</td>
+                <td class="sciences"> Sciences<br>M. Sanna</td>
+                <!-- <td class="" rowspan="3"><br></td> -->
+
+            </tr>
+
+            <tr>
+                <td class="heurecolor">15:40 - 16:30</td>
+                <td> <br> </td>
+                <!-- <td class="sciences">Sciences <br>M. Sanna</td> -->
+                <td class="francais">Français <br>Mme Honnof</td>
+                <!-- <td class=""><br></td> -->
+                <!-- <td class=""><br> </td></div> -->
+                
+            </tr>
+
+            <!-- <tr>
+                <td class="heurecolor">16:30</td>
+                <td colspan="5"></td>
+            </tr> -->
+    </table>
+    <footer><strong>SEPAR Ehsan </strong>4TC</footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            /* text-align: center; */
+            background-image: url('../image/evaluation2_img.jpg');
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: red;
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        pre {
+            border: 2px solid orange;
+            border-radius: 50px;
+            background-color: black;
+            color: green;
+            /* text-align: left; */
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: x-large;
+            font-weight: bold;
+            height: fit-content;
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        p {
+            color: red;
+        }
+        mark {
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Evaluation Noël </h1>
+    <h2>Separ Ehsan 4C</h2>
+<h1 id="hi"></h1>
+<h1 id="hi2"></h1>
+    <script>
+        i = 0
+        let pair = 0;
+        let impair = 0;
+        while (i < 10) {
+
+            let de1 = Math.floor(Math.random() * 10) + 1;
+            let de2 = Math.floor(Math.random() * 10) + 1;
+
+            let somme_des_des = (de1 + de2);
+
+            // alert(de1);
+
+            if (somme_des_des % 2 == 0) {
+                alert((i + 1)+ "ème Fois " + de1 + " + " + de2 + " = " + somme_des_des + " Pair");
+                pair++;
+            }
+            else {
+                alert((i + 1) + "ème Fois " + de1 + " + " + de2 + " = " + somme_des_des + " Impair");
+                impair++;
+            }
+            // alert();
+            i++;
+
+        }
+        // alert("Pair " + pair + " fois" + "\n" + "Impair" + impair + "fois")
+        const element = document.getElementById("hi");
+        document.getElementById("hi").innerHTML = "Pair " + pair + " fois";
+        
+
+        const element1 = document.getElementById("hi2");
+        document.getElementById("hi2").innerHTML = " Impair " + impair + " fois";
+    </script>
+
+
+<!-- Python -->
+<p>Voila le Code en langage Python</p>
+<pre>
+    <code>
+    from random import *
+    impair = 0 
+    pair = 0 
+    i = 0
+<mark></mark>
+<mark style="color: blueviolet;">while</mark> i <= 10 :
+<mark style="color: blueviolet;">        de1</mark> = randint(1, 10)
+        de2 = randint(1, 10)
+
+        somme_des_des = (de1 + de2)
+
+        if somme_des_des % 2 == 0 :
+        print(f"{(i + 1)}ème Fois {de1:2} +{de2:2} = {somme_des_des:2} Pair")
+        pair += 1
+
+        else :
+        print(f"{(i + 1)}ème Fois {de1:2} + {de2:2} = {somme_des_des:2} Impair")
+        impair += 1
+
+        i += 1
+    print("Terminé !")
+    print(f"Pair {pair} fois \nImpair {impair} fois")
+                </code>
+            </pre>
+
+
+
+
+            <!-- JavaScript -->
+            <p>Voici le Code en langage Python</p>
+            <pre>
+                <code>
+                    <!-- <script> -->
+                        i = 0
+                        let pair = 0;
+                        let impair = 0;
+                        while (i < 10) {
+                
+                            let de1 = Math.floor(Math.random() * 10) + 1;
+                            let de2 = Math.floor(Math.random() * 10) + 1;
+                
+                            let somme_des_des = (de1 + de2);
+                
+                            // alert(de1);
+                
+                            if (somme_des_des % 2 == 0) {
+                                alert((i + 1)+ "ème Fois " + de1 + " + " + de2 + " = " + somme_des_des + " Pair");
+                                pair++;
+                            }
+                            else {
+                                alert((i + 1) + "ème Fois " + de1 + " + " + de2 + " = " + somme_des_des + " Impair");
+                                impair++;
+                            }
+                            // alert();
+                            i++;
+                
+                        }
+                        // alert("Pair " + pair + " fois" + "\n" + "Impair" + impair + "fois")
+                        const element = document.getElementById("hi");
+                        document.getElementById("hi").innerHTML = "Pair " + pair + " fois";
+                        
+                
+                        const element1 = document.getElementById("hi2");
+                        document.getElementById("hi2").innerHTML = " Impair " + impair + " fois";
+                    <!-- </script> -->
+                
+                </code>
+            </pre>
+
+
+</body>
+
+</html>

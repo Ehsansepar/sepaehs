@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="256"
+   height="256"
+   viewBox="0 0 67.733333 67.733334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="MonLOGO.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="256px"
+     scale-x="1"
+     inkscape:zoom="1.0633188"
+     inkscape:cx="157.99589"
+     inkscape:cy="181.03696"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient46034">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop46030" />
+      <stop
+         style="stop-color:#61ff96;stop-opacity:1"
+         offset="1"
+         id="stop46032" />
+    </linearGradient>
+    <rect
+       x="349.16533"
+       y="127.70675"
+       width="502.70264"
+       height="68.177681"
+       id="rect14503" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient46034"
+       id="linearGradient46036"
+       x1="33.592735"
+       y1="-6.0478992"
+       x2="35.198509"
+       y2="55.099991"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient46034"
+       id="linearGradient56893"
+       x1="-77.572327"
+       y1="-7.3372512"
+       x2="-70.664398"
+       y2="14.524672"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.3211012,0,0,3.3211012,287.98342,-2.3161772)" />
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:url(#linearGradient46036);fill-rule:evenodd;stroke-width:0.269415;fill-opacity:1"
+       id="path39"
+       cx="33.927055"
+       cy="34.285854"
+       r="33.866665" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:arial;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;-inkscape-font-specification:arial;font-stretch:normal;font-variant:normal"
+       x="10.618772"
+       y="78.394012"
+       id="text1697"><tspan
+         sodipodi:role="line"
+         id="tspan1695"
+         style="stroke-width:0.264583;-inkscape-font-specification:arial;font-family:arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         x="10.618772"
+         y="78.394012" /></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text14501"
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:arial;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect14503);-inkscape-font-specification:arial;font-stretch:normal;font-variant:normal" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-weight:bold;font-size:35.9986px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';fill:#e9ddaf;fill-opacity:1;stroke-width:0.89997"
+       x="8.4474096"
+       y="34.047787"
+       id="text32234"
+       transform="scale(0.62920562,1.5893056)"><tspan
+         sodipodi:role="line"
+         id="tspan32232"
+         style="fill:#e9ddaf;fill-opacity:1;stroke-width:0.89997"
+         x="8.4474096"
+         y="34.047787">E . S</tspan></text>
+  </g>
+</svg>

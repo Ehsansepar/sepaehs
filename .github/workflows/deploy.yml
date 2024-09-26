@@ -1,0 +1,24 @@
+name: Deploy PHP App
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to your main branch if different
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ftp-sepaehs.alwaysdata.net
+          username: sepaehs
+          password: onuq7256
+          local-dir: ./
+          server-dir: /www/www_v2/
+ 
