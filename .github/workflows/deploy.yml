@@ -3,21 +3,20 @@ name: FTP Deploy
 on:
   push:
     branches:
-      - main  # Deploy when changes are pushed to the main branch
+      - main  # You can change the branch name as needed
 
 jobs:
   ftp-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: FTP Deploy
-        uses: mattbailey/ftp-deploy-action@v1.0.0
-        with:
-          ftp-server: ftp-sepaehs.alwaysdata.net
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./  # Specify your local directory (default is root)
-          server-dir: /www/  # Specify the server directory to deploy to
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+    
+    - name: Upload files via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ftp-sepaehs.alwaysdata.net
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: .  # The directory you want to upload (current directory)
+        server-dir: /www/  # The directory on the FTP server where you want to upload files
