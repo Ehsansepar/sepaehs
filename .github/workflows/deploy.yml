@@ -13,11 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Upload files via FTP
-        uses: lukaszgolebiewski/ftp-action@v1
+      - name: FTP Deploy
+        uses: sebastianpopp/git-ftp-action@v4
         with:
-          host: ftp-sepaehs.alwaysdata.net
+          url: ftp://ftp-sepaehs.alwaysdata.net
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          localDir: ./
-          remoteDir: /www/
+          local-dir: ./  # Change if you have specific folders to deploy
