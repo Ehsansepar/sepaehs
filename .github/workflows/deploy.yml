@@ -1,0 +1,24 @@
+name: FTP Deploy
+
+on:
+  push:
+    branches:
+      - main  # Deploy when changes are pushed to the main branch
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Upload files via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.4.0
+        with:
+          ftp-server: ftp://ftp-sepaehs.alwaysdata.net
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: /www/
+          exclude: .git*  # Exclude git-related files
