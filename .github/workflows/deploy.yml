@@ -18,5 +18,5 @@ jobs:
         server: ftp-sepaehs.alwaysdata.net
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: /  # The directory you want to upload (current directory)
+        local-dir: ./  # The directory you want to upload (current directory)
         server-dir: /www/  # The directory on the FTP server where you want to upload files
