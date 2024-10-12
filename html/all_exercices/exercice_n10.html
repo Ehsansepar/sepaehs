@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le Jeu d'Échecs</title>
+
+    <style>
+        body {
+            text-align: center;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 1500px; */
+            /* height: 100px; */
+            border-collapse: collapse;
+            border: none
+        }
+
+        .blue {
+            background-color: rgb(31, 30, 29);
+        }
+        .white {
+            background-color: rgb(209, 208, 208);
+            max-height: 100px;
+            max-width: 130px;
+            
+        }
+        img{
+            height: 60px;
+            width: 45px;
+            text-align: center;
+            /* box-shadow: 20px 10px;    */
+        }
+        th, td {
+            height: 70px;
+            width: 90px;
+        }
+
+        .chifre{
+            text-align: right;
+            font-weight: bold;
+            border: none;
+        }
+        .chifre_droite {
+            /* text-align: right; */
+            font-size: large;
+            font-weight: bold;
+            border: none;
+        }
+
+        /* .user, .chifre_droite {
+            transform: rotate(-180deg);
+        } */
+        .user {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px">
+        <tr>
+            <th class="chifre"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"><img src="../../image/icons/rook.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/knight.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/bishop.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/king.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/queen.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/bishop.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/knight.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/rook.png" alt=""></td>
+            <td class="chifre_droite">8</td>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/pawn.png" alt=""></td>
+            <td class="chifre_droite">7</td>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="chifre_droite">6</td>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="chifre_droite">5</td>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="chifre_droite">4</td>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="blue"></td>
+            <td class="white"></td>
+            <td class="chifre_droite">3</td>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/white_chess/pawn.png" alt=""></td>
+            <td class="chifre_droite">2</td>
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"><img src="../../image/icons/white_chess/rook.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/white_chess/knight.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/white_chess/bishop.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/white_chess/king.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/white_chess/queen.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/white_chess/bishop.png" alt=""></td>
+            <td class="blue"><img src="../../image/icons/white_chess/knight.png" alt=""></td>
+            <td class="white"><img src="../../image/icons/white_chess/rook.png" alt=""></td>
+            <td class="chifre_droite">1</td>
+        </tr>
+
+        <tr>
+            <th class="chifre"></th>
+            <th style="border: none;">A</th>
+            <th style="border: none;">B</th>
+            <th style="border: none;">C</th>
+            <th style="border: none;">D</th>
+            <th style="border: none;">E</th>
+            <th style="border: none;">F</th>
+            <th style="border: none;">G</th>
+            <th style="border: none;">H</th>
+        </tr>
+    </table>
+</body>
+</html> 

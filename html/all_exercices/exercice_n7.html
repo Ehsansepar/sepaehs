@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice</title>
+
+
+</head>
+<body>
+    <script>
+
+        var foisDeBoucles = 0;
+        let lesPoints = 0;
+
+         
+
+        while(foisDeBoucles <= 10) {
+
+            var num1 = Math.floor(Math.random() * 20) + 5;
+            var num2 = Math.floor(Math.random() * 20) + 5;
+            var bonneReponse = (num1 + num2);
+
+            let reponseUser = prompt(num1 + " + " + num2 + " = " + "?");
+
+
+            if(reponseUser == bonneReponse) {
+                
+                lesPoints++;
+            } else {
+
+            }
+
+            foisDeBoucles++;
+        }
+        alert("Vous avez obtenu "+ lesPoints +" points sur 10.");
+    </script>    
+</body>
+</html>

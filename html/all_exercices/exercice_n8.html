@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiMuFi</title>
+</head>
+<body>
+
+    <p style="text-align: center; font-size: 50px; font-weight: bold; padding-top: 200px;" id="Pointss"></p>
+
+    <h1>ChiFuMi</h1>
+    
+    <script>
+
+        let points_machine = 0;
+        let points_humain = 0;
+        const liste = ['Pierre', 'Papier', 'Ciseaux'];          // liste de mots 
+
+        while (points_humain <= 3 && points_machine <= 3) {
+
+        let i = Math.floor(Math.random() * 3 ); 
+
+        let humain  = prompt('Pierre, Papier, Ciseaux \nTu dois choisis entrer exactement un des trois mots \nPour quitter et regarder les points, Vous pouvez écrire "q" ');
+        let machine = liste[i];
+        
+        
+        
+                        // le ième élément i varie d 0 et 2 
+                        // alert('Quand i veut ' + i + ' on a : ' + liste[i]);     // dans la liste prends le iéme 
+        
+                        
+                        
+                        // alert('Machine a joué : ' + machine + '\nHumain a joué : ' + humain);
+                        
+                        //points 
+        var x = '\nLes points :' + '\nMachine ' + points_machine + '\nHumain : ' + points_humain; 
+                        
+
+        if (humain == 'Pierre' && machine == 'Ciseaux' ) {
+            document.getElementById("Pointss").innerHTML = x;
+            alert( '\tTu as gagné ' + 'Machine a joué : ' + machine + '\nHumain a joué : ' + humain);
+            points_humain += 1;
+        }
+
+        else if (humain == 'Papier' && machine == 'Pierre' ) {
+            document.getElementById("Pointss").innerHTML = x;
+            alert( '\tTu as gagné ' + 'Machine a joué : ' + machine + '\nHumain a joué : ' + humain);
+            points_humain =+ 1;
+        }
+
+        else if (humain == 'Ciseaux' && machine == 'Papier' ) {
+            document.getElementById("Pointss").innerHTML = x;
+            alert( '\tTu as gagné ' + 'Machine a joué : ' + machine + '\nHumain a joué : ' + humain);
+            points_humain += 1;
+        }
+        else if (humain == machine) {
+            document.getElementById("Pointss").innerHTML = x;
+            alert('Alert ÉGALITÉ!!! ' + '\nMachine : ' + machine + '\nHumain : ' + humain);
+            
+        }
+        else if (humain == 'q') {
+            alert('Tu as quitté le jeu' + '\nLes points :' + '\nMachine ' + points_machine + '\nHumain : ' + points_humain); 
+            
+            break;
+        }        
+        else {
+            alert('Tu as perdu ' + '\nMachine : ' + machine + '\nHumain : ' + humain)
+            points_machine += 1;
+            
+            
+            document.getElementById("Pointss").innerHTML = x;
+
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converteur</title>
+</head>
+<body>
+    <input type="text" name="nbr" id="nbr">
+
+
+
+    <script>
+
+        function ask_option() {
+            var option = prompt("Choisir votre l'app \n1 - de Mètre à Foot \n2 - de Foot à Mètre \nq - Quitter");
+        }
+
+    while (true) {
+        // ask_option();
+        var option = prompt("Choisir votre l'app \n1 - de Mètre à Pied \n2 - de Foot à Mètre \nq - Quitter");
+
+
+            if (option === "1" ){
+                let nbr = prompt("Parfais \nDe Mètre à Pied \n\nEntrer un Nombre Pour Convertir : \nn - aller a l'arrier ");
+                    if (nbr === "n") {
+                        ask_option();
+                    }
+                    else if (option != null) {
+                        converteur = parseFloat(nbr * 3.28, 2);
+                        prompt(`${nbr} m = ${converteur} foot`);
+                        }
+                        else {
+                            // converteur = parseFloat(nbr * 3.28084, 2);
+                            // prompt(`${nbr} m = ${converteur} foot`);
+                            alert("Tu dois choisir une option")
+                        }
+                }
+        
+        
+        if (option === "2") {
+            let nbr = prompt("Parfais \nDe Pied à Mètrer \n\nEntrer un Nombre Pour Convertir : \nn - aller a l'arrier ");
+
+            if (nbr === "n") {
+                        ask_option();
+                    }
+                    else if (option != null) {
+                        converteur = parseFloat(nbr / 3.28, 2);
+                        prompt(`${nbr} m = ${converteur} foot`);
+                        }
+                        else {
+                            // converteur = parseFloat(nbr * 3.28084, 2);
+                            // prompt(`${nbr} m = ${converteur} foot`);
+                            alert("Tu dois choisir une option")
+                        }
+                }
+    }
+
+
+    </script>
+</body>
+</html>

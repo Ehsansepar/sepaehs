@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=f, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Somme de 2 Nombre</title>
+
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border: 5px solid black;
+        }
+
+        .preNombre {
+            width: 250px;
+            text-align: center;
+            margin-left: 50px;
+        }
+
+        .symAddition {
+            width: 250px;
+            text-align: center;
+        }
+
+        .deuxNombre {
+            width: 250px;
+            text-align: center;
+        }
+        .btn-outline-danger {
+            display: none;
+        }
+        .addition {
+            display: none;
+            /* display: inline; */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somme de deux nombres</h1>
+    <p>exemple de script utlisant deux champs de saisie et un champ d'affichange</p>
+    
+    <div class="main">
+        <input id="nombre1" placeholder="Entrer Votre Premier Nombre" class="preNombre" type="number"> +
+        <input id="nombre2" placeholder="Entrer Votre Deuxième Nombre" class="deuxNombre" type="number"> =
+        <input id="somme" class="addition" type="number" readonly>
+
+        <!-- <button type="button" class="btn btn-info">Info</button> -->
+        <button onclick="calculeSomme()" id="btn_resultat" type="button" class="btn btn-outline-info">Faire La somme</button>
+        <button onclick="resetNombre()" type="button" id="effacer" class="btn btn-outline-danger">Effacer</button>
+    </div>
+
+    <script>
+
+function calculeSomme() {
+    // alert('hi');
+    let nb1 = document.getElementById('nombre1').value;
+    let nb2 = document.getElementById('nombre2').value;
+
+    let sommeResultat = (parseInt(nb1) + parseInt(nb2));
+
+    
+    
+    if (isNaN(sommeResultat)) {
+        alert("Veuillez entrer des chiffres");
+        } else {
+
+
+            // let effacertout = document.getElementById('effacer');
+
+            // effacertout.style.display = 'none';
+            
+
+            let sommeNombre;
+            sommeNombre = document.getElementById("somme");
+            sommeNombre.value += sommeResultat;
+            sommeNombre.style.display = 'inline-block';
+
+            let reset = document.getElementById('effacer');
+            reset.style.display = 'inline-block';
+            
+            document.getElementById('btn_resultat').style.display = 'none';
+        
+        };
+        // document.getElementById('somme').style.display = 'none';
+    }
+    
+
+
+        function resetNombre() {
+
+            // document.getElementById("somme").value = '';
+            
+            let nb1 = document.getElementById('nombre1').value = '';
+            let nb2 = document.getElementById('nombre2').value = '';
+            
+            let resultat = document.getElementById('somme').style.display = 'none';
+            
+            let reset = document.getElementById('effacer');
+            reset.style.display = 'none';
+
+            document.getElementById('btn_resultat').style.display = 'inline-block';
+            }
+
+    </script>
+</body>
+</html>

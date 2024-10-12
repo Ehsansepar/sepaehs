@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+
+    <style>
+
+        .file {
+            margin-left: 20px;
+        /* padding-bottom: 10px; */
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <form action="../../php/inscription.php" method="post" >
+        <fieldset>
+
+            <legend>Inscription</legend>
+            
+            <div>
+                <input class="file" type="radio" name="sexe" id="Mme" value="F" checked />
+                <label for="Mme">Madame</label>
+                
+                <input class="file" type="radio" name="sexe" id="Mr" value="M" />
+                <label for="Mr">Monsieur</label>
+            </div>
+
+            <div>
+                <label class="file" for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom">
+            </div>
+
+            <div>
+                <label for="nom">Nom</label>
+                <input class="file" type="text" id="nom" name="nom">
+            </div>
+            
+            <div>
+                <label for="naissance">Date Naissance</label>
+                <input class="file" type="date" id="naissance" name="naissance">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input class="file" type="email" id="email" name="email">
+            </div>
+            
+            <fieldset>
+
+            <legend>Adresse</legend>
+            
+            <div>
+                <label for="rue">Rue</label>
+                <input type="text" id="rue" name="rue">
+            </div>
+            
+            <div>
+                <label for="code_postal">Code Postal</label>
+                <input type="text" name="code_postal" id="code_postal">
+            </div>
+
+            <div>
+                <label for="localite">Localité</label>
+                <input type="text" name="localite" id="localite">
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Inscription">
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule IMC</title>
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+            background-image: url(../les_pages_exercices/images/html_table.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hello {
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            position: relative;
+            top: 100px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        legend {
+            color: #333333;
+            font-size: 24px;
+            text-align: center;
+            border: 1px solid orange;
+            background-color: orange;
+            text-align: center;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+
+        }
+
+        label {
+            color: #333333;
+            font-size: 18px;
+        }
+
+        input[type="number"] {
+            width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        input[type="submit"] {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            background-color: orange;
+            border-radius: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555555;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="../../php/calcul_IMC.php" method="post">
+        <fieldset class="hello">
+            <legend>IMC</legend>
+
+            <div>
+                <label for="taille">Taille</label>
+                <input type="number" class="taille" name="taille" id="taille" placeholder="CM" >
+            </div>
+
+            <div>
+                <label for="kg">Votre Poids</label>
+                <input type="number" name="kg" id="kg" placeholder="KG">
+            </div>
+            <input type="submit" value="Calcule">
+        </fieldset>
+    </form>
+</body>
+</html>

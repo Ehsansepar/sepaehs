@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de connexion</title>
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .hello {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        fieldset {
+            width: 460px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            align-items: center;
+            margin: 20px auto;
+            border: none;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #333333;
+        }
+
+        label {
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">
+        <fieldset>
+            <legend>Connexion</legend>
+            <form action="../php/connexion.php" method="post">
+
+                <label for="pseudo">Pseudo</label><br>
+                <input type="text" name="pseudo" id="pesudo" required placeholder="Entrez Votre Pseudo"><br><br>
+
+                <label for="mail">Mail</label><br>
+                <input type="email" name="mail" id="mail" required placeholder="Entrez Votre Email"><br><br>
+
+                <label for="mdp">Mot De Passe</label><br>
+                <input type="password" name="mdp" id="mdp" required placeholder="Entrer Votre Mot de Passe"><br><br>
+
+                <input type="submit" value="Connectez-vous">
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

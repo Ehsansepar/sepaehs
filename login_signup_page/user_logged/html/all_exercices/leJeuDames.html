@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Le jeu Dames</title>
+    
+    <style>
+        body {
+            text-align: center;
+        }
+        table {
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            /* width: 1500px; */
+            /* height: 100px; */
+            border-collapse: collapse;
+            border: none
+        }
+
+        .blue {
+            /* background-color: rgba(255, 124, 1, 0.637); */
+            background-color: rgba(167,124,93,255);
+        }
+        .white {
+            background-color: rgba(232,208,170,255);
+            max-height: 100px;
+            max-width: 130px;
+            
+        }
+        img{
+            height: 60px;
+            width: 45px;
+            text-align: center;
+            /* box-shadow: 20px 10px;    */
+        }
+        th, td {
+            height: 70px;
+            width: 90px;
+        }
+
+        .chifre{
+            text-align: right;
+            font-weight: bold;
+            border: none;
+        }
+        .chifre_droite {
+            /* text-align: right; */
+            font-size: large;
+            font-weight: bold;
+            border: none;
+        }
+
+        /* .user, .chifre_droite {
+            transform: rotate(-180deg);
+        } */
+        .user {
+            border: none;
+        }
+        .user_bot {
+            border: 0.3px solid black;
+            background-color: rgba(114,78,71,255);
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: 10px;
+        }
+        .user_humain {
+            border: 0.3px solid black;
+            background-color: rgba(240,189,72,255);
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: 10px;
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 0;
+            text-align: left;
+            
+        }
+        .simple_circle {
+            border: 0.3px solid rgba(167,124,93,255);
+            /* background-color: rgba(240,189,72,255); */
+            border-radius: 50px;
+            height: 50px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <button type="button" class="btn btn-info"><a href="../page_exercice.html"></a>La Page d'exercices</button> -->
+
+    <table border="1px">
+        <!-- <tr>
+            <th class="chifre"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+            <th class="user"></th>
+        </tr> -->
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>1</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>2</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>3</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>4</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>5</p></td>
+            <!-- <td class="chifre_droite">10</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"><div class="user_bot"></div><p>6</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>7</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>8</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>9</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>10</p></td>
+            <td class="white"></td>
+            <!-- <td class="chifre_droite">9</td> -->
+        </tr>
+        
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>11</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>12</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>13</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>14</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>15</p></td>
+            <!-- <td class="chifre_droite">8</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"><div class="user_bot"></div><p>16</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>17</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>18</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>19</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_bot"></div><p>20</p></td>
+            <td class="white"></td>
+            <!-- <td class="chifre_droite">7</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>21</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>22</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>23</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>24</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>25</p></td>
+            <!-- <td class="chifre_droite">6</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"><div class="simple_circle"></div><p>26</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>27</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>28</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>29</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="simple_circle"></div><p>30</p></td>
+            <td class="white"></td>
+            <!-- <td class="chifre_droite">5</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>31</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>32</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>33</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>34</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>35</p></td>
+            <!-- <td class="chifre_droite">4</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"><div class="user_humain"></div><p>36</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>37</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>38</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>39</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>40</p></td>
+            <td class="white"></td>
+            <!-- <td class="chifre_droite">3</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>41</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>42</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>43</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>44</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>45</p></td>
+            <!-- <td class="chifre_droite">2</td> -->
+        </tr>
+
+        <tr>
+            <td class="chifre"></td>
+            <td class="blue"><div class="user_humain"></div><p>46</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>47</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>48</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>49</p></td>
+            <td class="white"></td>
+            <td class="blue"><div class="user_humain"></div><p>50</p></td>
+            <td class="white"></td>
+            <!-- <td class="chifre_droite">1</td> -->
+        </tr>
+
+        <!-- <tr>
+            <th class="chifre"></th>
+            <th style="border: none;">A</th>
+            <th style="border: none;">B</th>
+            <th style="border: none;">C</th>
+            <th style="border: none;">D</th>
+            <th style="border: none;">E</th>
+            <th style="border: none;">F</th>
+            <th style="border: none;">G</th>
+            <th style="border: none;">H</th>
+            <th style="border: none;">I</th>
+            <th style="border: none;">J</th>
+            
+        </tr> -->
+    </table>
+</body>
+</html>

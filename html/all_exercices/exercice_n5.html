@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devine me nombre</title>
+</head>
+<body>
+    <h1>Devine le nombre</h1>
+
+    <script>
+        // alert('Bonjour les amis! \nVoulez-vous jouer à devine le nombre cacher ?');
+        // L'ordinateur tire un nombre entier compris entre 1 et 100 au "hasard"
+        var nb_cache = Math.floor(Math.random()*100)+1;
+
+        alert(nb_cache);
+        // 2. On demande au joueur d'entrer un nombre compris entre 1 et 100
+        var nb_propose = prompt('Entrer un nombre compris entre 1 et 100 : ');
+
+        // alert('Le nombre proposé est :' + nb_propose)
+
+        // Initiatiser un compteur des nombres d'essais
+
+        var nb_essais = 1
+
+        // 3 et 4 Voir si nombre trop petit ou trop grand 
+    
+    while(nb_propose != nb_cache) {
+
+        if(nb_propose < nb_cache) {
+            nb_propose = prompt('Trop PETIT! Donne-moi un nombre plus GRAND!');
+        }
+
+        if(nb_propose > nb_cache) {
+            nb_propose = prompt('Trop GRAND! Donne-moi un nombre plus PETIT!')
+        }
+
+        nb_essais ++;
+    }
+        alert('BRAVO!!! Tu as trouvé le nombre caché!' + nb_cache + '\nAprès ' + nb_essais + ' essais');
+    </script>
+    
+</body>
+</html>

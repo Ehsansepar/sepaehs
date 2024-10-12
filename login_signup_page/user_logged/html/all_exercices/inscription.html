@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+        * {
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            background-repeat: no-repeat;
+            border-radius: 50px;
+            text-align: center;
+        }
+        body {
+            background-image: url(../les_pages_exercices/images/html_table.jpg);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            background: transparent;
+            backdrop-filter: blur(15px) brightness(80%);
+
+            width: 400px;
+            margin: 50px auto;
+            padding: 10px;
+            /* border: 1px solid #ddd; */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            border: none;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
+
+        legend {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.158);
+            backdrop-filter: blur(5px);
+            /* border: 1px solid black; */
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+            font-size: small;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: white;
+        }
+
+        input[type="radio"] {
+            /* margin-right: 10px; */
+            padding-left: 40px;
+            padding-right: 50PX;
+            vertical-align: middle;
+            text-align: center;
+            align-items: center;
+            border: none;
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        input[type="submit"] {
+            width: 270px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.158);
+            backdrop-filter: blur(5px);
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: rgba(84, 84, 84, 0.158);
+                      backdrop-filter: blur(5px);
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #3e8e41;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            /* background-color: #f5f5f5; */
+            background: transparent;
+            backdrop-filter: blur(15px) brightness(80%);
+
+        }
+
+        input[type="confirmation_mdp"] {
+            margin-bottom: 15px;
+        }
+
+        .fieldset-legend {
+            display: flex;
+            justify-content: space;
+        }
+
+        fieldset div {
+        /* transform: translateY(-50%); */
+        background: transparent;
+        display: flex;    
+    }
+    .sexe-monsieur, .sexe-madame {
+        background: rgba(255, 255, 255, 0.158);
+        backdrop-filter: blur(5px);
+        width: 100px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .submit {
+        background: rgba(255, 255, 255, 0.158);
+        backdrop-filter: blur(5px);
+    }
+
+
+
+    input[type="text"]::-webkit-input-placeholder { 
+            color: white;
+            background-color: transparent;
+        }
+
+        input[type="email"]::-webkit-input-placeholder { 
+            color: white;
+            background-color: transparent;
+        }
+
+        input[type="password"]::-webkit-input-placeholder { 
+            color: white;
+            background-color: transparent;
+        }
+
+
+
+        @media only screen and (max-width: 393px) {
+  body {
+    background-color: lightblue;
+  }
+
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    
+
+    max-width: fit-content;
+}
+
+    input[type=date] {
+        height: 40px;
+    }
+
+    label[for=naissance] {
+        color: white;
+        font-weight: bold;
+        font-size: medium;
+        position: absolute;
+        right: 110px;
+        top: 288px;
+        /* text-align: center; */
+        /* margin-left: 50%; */
+    }
+
+}
+
+
+
+</style>
+</head>
+<body>
+    <form action="../../php/inscription.php" method="post" >
+        <fieldset>
+
+            <legend>Inscription</legend>
+            
+            <fieldset>
+                <legend>Signalétique</legend>
+            <div class="sexe">
+                <div class="sexe-madame">
+                <input type="radio" name="sexe" id="Mme" value="F" checked />
+                <label for="Mme">Madame</label>
+            </div>
+            <div class="sexe-monsieur">
+                <input type="radio" name="sexe" id="Mr" value="M" />
+                <label for="Mr">Monsieur</label>
+            </div>
+
+            </div>
+
+            <div>
+                <!-- <label for="prenom">Prénom</label> -->
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+            </div>
+
+            <div>
+                <!-- <label for="nom">Nom</label> -->
+                <input type="text" id="nom" name="nom" placeholder="Nom">
+            </div>
+            
+            <div>
+                <label for="naissance">Date de Naissance</label>
+                <input type="date" id="naissance" name="naissance" placeholder="Date De Naissance">
+            </div>
+
+        </fieldset>
+            
+            <fieldset>
+
+            <legend>Adresse</legend>
+            
+            <div>
+                <!-- <label for="rue">Rue</label> -->
+                <input type="text" id="rue" name="rue" placeholder="Rue, Numéro, Boite Postal">
+            </div>
+            
+            <div>
+                <!-- <label for="code_postal">Code Postal</label> -->
+                <input type="text" name="code_postal" id="code_postal" placeholder="Code Postal">
+            </div>
+
+            <div>
+                <!-- <label for="localite">Localité</label> -->
+                <input type="text" name="localite" id="localite" placeholder="Localité">
+
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Accès</legend>
+            <div>
+                <!-- <label for="email">Email</label> -->
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+
+            <div>
+                <input type="password" id="mdp" name="mdp" placeholder="Mot de Passe" required>
+            </div>
+
+            <div>
+                <input type="text" id="confirmation_mdp" name="confirmation_mdp" placeholder="Confirmation Mot de Passe">
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <!-- <legend>S'inscrire ou se connecter</legend> -->
+            <input class="submit" type="submit" value="Inscription">
+            
+            <p>Déjà Inscrit ?</p> <a href="../connexion.html">Connexion</a>  
+        </fieldset>
+    
+    </fieldset>
+    </form>
+</body>
+</html>

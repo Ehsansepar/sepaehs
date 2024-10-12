@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Échelles et Serpents</title>
+
+    <!-- <script src="../js/EchellesSerpents.js"></script>  -->
+    <script>
+
+        function lanceDE() {
+            let DE = Math.floor(Math.random() * 6) + 1;
+            return DE;
+        }
+
+        function jouer() {
+            let j1 = prompt('Joueur 1');
+            let j2 = prompt('Joueur 2');
+
+            alert(j1 + ' VS ' + j2)
+            
+            let pj1 = 0;
+            let pj2 = 0;
+        let DE;
+
+        while (pj1 < 100 && pj2 < 100) {
+            // le premier joueur joue...
+            DE = lanceDE();
+            pj1 = pj1 + DE;
+            alert(j1 + ' lance le dé et obtient un ' + DE + ' et va à la case ' + pj1);
+
+
+            // le deuxieme joueur 
+            DE = lanceDE()
+            pj2 = pj2 + DE;
+            alert(j2 + ' lance le dé et obtient un ' + DE + ' et va à la case ' + pj2);
+
+
+        }
+        if (j1 < j2) {
+            alert('Premier Joueur a gagné avec ' + pj1 + ' Points')
+        }
+        else {
+            alert('Deuxième Joueur a gagné avec ' + pj2 + ' Points')
+        }
+        
+    }
+        
+        
+    </script>
+    
+    </head>
+
+<body>
+
+    <p>
+        <img src="https://mamansurvivante.files.wordpress.com/2015/05/img_0908.jpg" alt="Jeu d'Échelle Serpant">
+    </p>
+
+    <p>Jouer à échelles et serpents</p>
+
+    <button onclick="jouer()">Commencer la partie!</button>
+
+
+
+</body>
+
+</html>

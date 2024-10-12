@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    background-color: black;
+    background-image: url(../image/abstract-digital-grid-black-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    /* This is a single-line comment 
+    font-family: 'Pacifico', cursive;
+    font-size: medium;
+    */
+    color: white;
+
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+
+}
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.copy {
+    text-align: center;
+}
+
+
+
+
+header {
+    background-color: rgba(1,27,27,255);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    color: brown;
+}
+
+/* .menu {
+    display: inline-block;
+} */
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: orangered;
+    text-decoration: underline;
+}
+.introduction:hover {
+    text-decoration: none;
+    cursor: auto;
+    color: white;
+}

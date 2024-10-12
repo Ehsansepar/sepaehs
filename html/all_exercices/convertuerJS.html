@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertueur</title>
+</head>
+<body>
+    <input type="text" name="nbr" id="nbr">
+
+
+
+    <script>
+
+        function ask_option() {
+            var option = prompt("Choisir votre l'app \n1 - de Mètre à Foot \n2 - de Foot à Mètre \nq - Quitter");
+        }
+
+    while (true) {
+        // ask_option();
+        var option = prompt("Choisir votre l'app \n1 - de Mètre à Foot \n2 - de Foot à Mètre \nq - Quitter");
+
+
+        if (option === "1" ){
+            let nbr = prompt("Parfais \nDe Mètre à Foot \nEntrer un Nombre Pour Convertir : \nn - aller a l'arrier ");
+            if (nbr === "n") {
+                ask_option();
+            }
+            else {
+                converteur = parseFloat(nbr * 3.28084, 2);
+                prompt(`${nbr} m = ${converteur} foot`);
+            }
+        }
+        else if (option === "2") {
+            let nbr = prompt("Parfais \nDe Foot à Mètrer \nEntrer un Nombre Pour Convertir : \nn - aller a l'arrier ");
+
+            if (nbr === "n") {
+                ask_option();
+            }else{
+            converteur = parseFloat(nbr / 3.28084, 2);
+            prompt(`${nbr} foot = ${converteur} m`);}
+        }
+
+        else if (option === "q" || option === "quitter") {
+            alert("see you later ");
+            break;
+        }
+    }
+
+    </script>
+</body>
+</html>

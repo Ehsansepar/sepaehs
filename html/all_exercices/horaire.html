@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horaire</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 class="text-3xl font-bold mb-4">Exercices</h1>
+
+    <h2 class="text-2xl mb-2">Tableaux</h2>
+
+    <table class="min-w-full border border-gray-300 border-collapse">
+        <caption class="text-lg font-semibold mb-2">Nouvel horaire</caption>
+        <thead>
+            <tr>
+                <th class="border border-gray-300 p-2">Heure</th>
+                <th class="border border-gray-300 p-2">Lundi</th>
+                <th class="border border-gray-300 p-2">Mardi</th>
+                <th class="border border-gray-300 p-2">Mercredi</th>
+                <th class="border border-gray-300 p-2">Jeudi</th>
+                <th class="border border-gray-300 p-2">Vendredi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="border border-gray-300 p-2">8h25-9h15</th>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2 bg-blue-100 hover:bg-blue-200">Français<br>Mme Pugliese<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-blue-100 hover:bg-blue-200">Français<br>Mme Pugliese<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-blue-100 hover:bg-blue-200">Français<br>Mme Pugliese<br>R201 P</td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">9h15-10h05</th>
+                <td class="border border-gray-300 p-2 bg-yellow-100 hover:bg-yellow-200">Religion<br>M. Stassen<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-green-100 hover:bg-green-200">Math<br>M. Devreux<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-green-100 hover:bg-green-200">Math<br>M. Devreux<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-purple-100 hover:bg-purple-200">Programmation<br>M. Klich<br>[grp1]<br>E206</td>
+                <td class="border border-gray-300 p-2 bg-orange-100 hover:bg-orange-200">Géographie<br>Mme Smets<br>R201 P</td>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border border-gray-300 p-2" colspan="6">Récréation</td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">10h20-11h10</th>
+                <td class="border border-gray-300 p-2 bg-pink-100 hover:bg-pink-200">Anglais<br>Mme Mperatis<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-purple-100 hover:bg-purple-200">Programmation<br>M. Klich<br>[grp1]<br>E206</td>
+                <td class="border border-gray-300 p-2 bg-pink-100 hover:bg-pink-200">Anglais<br>Mme Mperatis<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-purple-100 hover:bg-purple-200">Système d'exploitation<br>M. Klich<br>[grp1]<br>E206</td>
+                <td class="border border-gray-300 p-2 bg-yellow-100 hover:bg-yellow-200">Multimedia<br>M. Rodrigues<br>[grp1]</td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">11h10-12h00</th>
+                <td class="border border-gray-300 p-2 bg-red-100 hover:bg-red-200">PES info<br>M. Tanier<br>R116</td>
+                <td class="border border-gray-300 p-2 bg-yellow-100 hover:bg-yellow-200">Multimedia<br>M. Rodrigues<br>[grp1]</td>
+                <td rowspan="2" class="border border-gray-300 p-2 bg-gray-200">EdPhys<br>M. Kreusch</td>
+                <td class="border border-gray-300 p-2 bg-green-100 hover:bg-green-200">Math<br>M. Devreux<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-gray-100 hover:bg-gray-200">Science<br>Mme Camus<br>R111</td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">12h00-12h55</th>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2 bg-blue-100 hover:bg-blue-200">Français<br>Mme Pugliese<br>R201 P</td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">12h55-13h45</th>
+                <td class="border border-gray-300 p-2 bg-green-100 hover:bg-green-200">Math<br>M.Devreux<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-orange-100 hover:bg-orange-200">Géographie<br>Mme Smets<br>R201 P</td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2 bg-purple-100 hover:bg-purple-200">Informatique<br>M. Carrera<br>[grp1]<br>E104</td>
+                <td class="border border-gray-300 p-2"></td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">13h45-14h35</th>
+                <td class="border border-gray-300 p-2 bg-blue-100 hover:bg-blue-200">Histoire<br>Mme Van Oostende<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-pink-100 hover:bg-pink-200">Anglais<br>Mme Mperatis<br>R201 P</td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2 bg-red-100 hover:bg-red-200">PES info<br>M. Tanier<br>R116</td>
+                <td class="border border-gray-300 p-2 bg-pink-100 hover:bg-pink-200">Anglais<br>Mme Mperatis<br>R201 P</td>
+            </tr>
+            <tr class="bg-gray-200">
+                <td class="border border-gray-300 p-2" colspan="6">Récréation</td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">14h50-15h40</th>
+                <td class="border border-gray-300 p-2 bg-blue-100 hover:bg-blue-200">Histoire<br>Mme Van Oostende<br>R201 P</td>
+                <td class="border border-gray-300 p-2 bg-gray-100 hover:bg-gray-200">Science<br>Mme Camus<br>R111</td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2 bg-gray-100 hover:bg-gray-200">Science<br>Mme Camus<br>R111</td>
+                <td class="border border-gray-300 p-2 bg-purple-100 hover:bg-purple-200">Système d'exploitation<br>M. Klich<br>[grp1]<br>E206</td>
+            </tr>
+            <tr>
+                <th class="border border-gray-300 p-2">15h40-16h30</th>
+                <td class="border border-gray-300 p-2 bg-purple-100 hover:bg-purple-200">Informatique<br>M. Carrera<br>[grp1]<br>E104</td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2"></td>
+                <td class="border border-gray-300 p-2 bg-yellow-100 hover:bg-yellow-200">Religion<br>M. Stassen<br>R201 P</td>
+                <td class="border border-gray-300 p-2"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
