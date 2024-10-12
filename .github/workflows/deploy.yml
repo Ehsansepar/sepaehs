@@ -14,9 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: FTP Deploy
-        uses: sebastianpopp/git-ftp-action@v4
+        uses: mattbailey/ftp-deploy-action@v1.0.0
         with:
-          url: ftp://ftp-sepaehs.alwaysdata.net
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./  # Change if you have specific folders to deploy
+          ftp-server: ftp-sepaehs.alwaysdata.net
+          ftp-username: ${{ secrets.FTP_USERNAME }}
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./  # Specify your local directory (default is root)
+          server-dir: /www/  # Specify the server directory to deploy to
