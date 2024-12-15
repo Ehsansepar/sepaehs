@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <style>
+        .attempt {
+            border: 1px solid #000;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .color-box {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin: 5px;
+        }
+        #secretCodeDisplay {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jeu Mastermind</h1>
+    
+    <p>Le jeu choisit des couleurs au hasard à chaque essai. Essayez de deviner la combinaison secrète !</p>
+
+    <!-- Zone où les essais seront affichés -->
+    <div id="attemptsContainer"></div>
+
+    <!-- Bouton pour essayer une combinaison -->
+    <div>
+        <button id="submitBtn">Essayer</button>
+    </div>
+
+    <!-- Bouton pour afficher la combinaison secrète -->
+    <div>
+        <button id="showSecretBtn">Afficher la combinaison secrète</button>
+        <p id="secretCodeDisplay" style="display:none;"></p>
+    </div>
+
+    <script>
+        var colors = ['Rouge', 'Bleu', 'Vert', 'Jaune', 'Orange', 'Violet'];
+        var colorCodes = {
+            'Rouge': 'red',
+            'Bleu': 'blue',
+            'Vert': 'green',
+            'Jaune': 'yellow',
+            'Orange': 'orange',
+            'Violet': 'purple'
+        };
+
+        var secretCode = [];
+        for (var i = 0; i < 4; i++) {
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            secretCode.push(randomColor);
+        }
+
+        
+        console.log("Code secret : ", secretCode);
+
+        function generateRandomGuess() {
+            var guess = [];
+            for (var i = 0; i < 4; i++) {
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                guess.push(randomColor);
+            }
+            return guess;
+        }
+
+        function giveFeedback(guess) {
+            var correctPosition = 0;
+            var correctColor = 0;
+            var secretCopy = secretCode.slice(); // Copier la combinaison secrète
+            var guessCopy = guess.slice(); // Copier l'essai
+
+            // Vérifier les couleurs bien placées
+            for (var i = 0; i < 4; i++) {
+                if (guess[i] === secretCode[i]) {
+                    correctPosition++;
+                    secretCopy[i] = null;
+                    guessCopy[i] = null;
+                }
+            }
+
+            // Vérifier les couleurs correctes mais mal placées
+            for (var i = 0; i < 4; i++) {
+                if (guessCopy[i] !== null && secretCopy.indexOf(guessCopy[i]) !== -1) {
+                    correctColor++;
+                    secretCopy[secretCopy.indexOf(guessCopy[i])] = null;
+                }
+            }
+
+            return { correctPosition: correctPosition, correctColor: correctColor };
+        }
+
+        // Ajouter un essai à la zone des essais
+        function addAttemptToContainer(guess, feedback) {
+            var container = document.getElementById('attemptsContainer');
+            
+            // Créer un paragraphe pour l'essai
+            var attemptDiv = document.createElement('div');
+            attemptDiv.classList.add('attempt');
+
+            // Créer un paragraphe pour l'essai avec les couleurs et blocs colorés
+            var colorsPara = document.createElement('p');
+            colorsPara.textContent = 'Essai : ' + guess.join(', ');
+
+            // Créer des blocs colorés pour chaque couleur
+            for (var i = 0; i < 4; i++) {
+                var colorBox = document.createElement('div');
+                colorBox.classList.add('color-box');
+                colorBox.style.backgroundColor = colorCodes[guess[i]];
+                attemptDiv.appendChild(colorBox);
+            }
+
+            // Ajouter les couleurs et blocs à l'essai
+            attemptDiv.appendChild(colorsPara);
+
+            // Créer un paragraphe pour le feedback
+            var feedbackPara = document.createElement('p');
+            feedbackPara.textContent = 'Position Correctes: ' + feedback.correctPosition + ', Couleurs Correctes: ' + feedback.correctColor;
+
+            // Ajouter le feedback à l'essai
+            attemptDiv.appendChild(feedbackPara);
+
+            // Ajouter l'essai au conteneur
+            container.appendChild(attemptDiv);
+        }
+
+        // Nombre d'essais
+        var attempts = 0;
+
+        // Gérer l'événement pour le bouton "Essayer"
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var guess = generateRandomGuess(); // Générer un essai aléatoire
+
+            var feedback = giveFeedback(guess);
+            addAttemptToContainer(guess, feedback);
+
+            attempts++;
+
+            if (feedback.correctPosition === 4) {
+                alert('Félicitations, vous avez trouvé la combinaison secrète !');
+            } else if (attempts >= 10) {
+                alert('Game Over ! Vous avez dépassé le nombre d\'essais.');
+            }
+        });
+
+        // Afficher la combinaison secrète
+        document.getElementById('showSecretBtn').addEventListener('click', function () {
+            var secretCodeDisplay = document.getElementById('secretCodeDisplay');
+            secretCodeDisplay.style.display = 'block';
+            secretCodeDisplay.textContent = 'La combinaison secrète est : ' + secretCode.join(', ');
+        });
+    </script>
+</body>
+</html>

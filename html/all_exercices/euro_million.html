@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket EuroMillions + Joker+</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .ticket-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .ticket {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .ticket:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            font-size: 24px;
+            color: #2e3a87;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .numbers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .numbers .num, .stars .star {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f39c12;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .numbers .num:hover, .stars .star:hover {
+            background-color: #e67e22;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .joker {
+            font-size: 20px;
+            background-color: #3498db;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .joker:hover {
+            background-color: #2980b9;
+        }
+
+        .message {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #2e3a87;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+
+        .generate-btn, .reset-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2e3a87;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .generate-btn:hover, .reset-btn:hover {
+            background-color: #1d2a5f;
+        }
+
+        .reset-btn {
+            background-color: #e74c3c;
+            margin-top: 10px;
+        }
+
+        .reset-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Joker+ Styles */
+        .joker-numbers {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .joker-col {
+            width: 30px;
+            height: 30px;
+            background-color: #f39c12;
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .joker-col:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="ticket-container">
+        <!-- EuroMillions Ticket -->
+        <div class="ticket">
+            <div class="title">EuroMillions</div>
+            <div class="numbers">
+                <div class="num" id="num1">--</div>
+                <div class="num" id="num2">--</div>
+                <div class="num" id="num3">--</div>
+                <div class="num" id="num4">--</div>
+                <div class="num" id="num5">--</div>
+            </div>
+            <div class="stars">
+                <div class="star" id="star1">--</div>
+                <div class="star" id="star2">--</div>
+            </div>
+            <button class="generate-btn" onclick="generateEuroMillions()">Générer EuroMillions</button>
+        </div>
+
+        <!-- Joker+ Ticket -->
+        <div class="ticket">
+            <div class="title">Joker+</div>
+            <div class="joker-numbers" id="jokerNumbers">
+                <!-- 6 joker numbers will appear here -->
+                <div class="joker-col" id="joker1">--</div>
+                <div class="joker-col" id="joker2">--</div>
+                <div class="joker-col" id="joker3">--</div>
+                <div class="joker-col" id="joker4">--</div>
+                <div class="joker-col" id="joker5">--</div>
+                <div class="joker-col" id="joker6">--</div>
+            </div>
+            <button class="generate-btn" onclick="generateJoker()">Générer Joker+</button>
+            <div class="message" id="jokerMessage">Bonne chance pour le Joker+ !</div>
+        </div>
+    </div>
+
+    <button class="reset-btn" onclick="resetTicket()">Réinitialiser</button>
+
+    <script>
+        // Fonction pour générer un nombre aléatoire dans une plage donnée
+        function generateRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Fonction pour générer les numéros EuroMillions
+        function generateEuroMillions() {
+            // Générer 5 numéros principaux (entre 1 et 50)
+            let mainNumbers = [];
+            while (mainNumbers.length < 5) {
+                let num = generateRandomNumber(1, 50);
+                if (!mainNumbers.includes(num)) {
+                    mainNumbers.push(num);
+                }
+            }
+
+            // Générer 2 étoiles (entre 1 et 12)
+            let starNumbers = [];
+            while (starNumbers.length < 2) {
+                let star = generateRandomNumber(1, 12);
+                if (!starNumbers.includes(star)) {
+                    starNumbers.push(star);
+                }
+            }
+
+            // Affichage des numéros principaux
+            mainNumbers.sort((a, b) => a - b);
+            for (let i = 0; i < 5; i++) {
+                document.getElementById(`num${i + 1}`).textContent = mainNumbers[i];
+            }
+
+            // Affichage des étoiles
+            for (let i = 0; i < 2; i++) {
+                document.getElementById(`star${i + 1}`).textContent = starNumbers[i];
+            }
+        }
+
+        // Fonction pour générer les numéros Joker+ (6 colonnes)
+        function generateJoker() {
+    const jokerNumbers = [];
+    while (jokerNumbers.length < 6) {
+        let jokerNum = generateRandomNumber(1, 9); // Numéro Joker+ entre 1 et 9
+        if (!jokerNumbers.includes(jokerNum)) {
+            jokerNumbers.push(jokerNum);
+        }
+    }
+
+    // Affichage des numéros Joker+
+    for (let i = 0; i < 6; i++) {
+        document.getElementById(`joker${i + 1}`).textContent = jokerNumbers[i];
+    }
+
+    // Récupérer la valeur du joker6
+    let joker6Value = jokerNumbers[5]; // jokerNumbers[5] est joker6
+
+    // Liste des signes astrologiques
+    const signesAstrologiques = [
+        "Bélier",
+        "Taureau",
+        "Gémeaux",
+        "Cancer",
+        "Lion",
+        "Vierge",
+        "Balance",
+        "Scorpion",
+        "Sagittaire",
+        "Capricorne",
+        "Verseau",
+        "Poissons"
+    ];
+
+    // Trouver le signe astrologique correspondant à joker6
+    // joker6Value doit être un nombre entre 1 et 9, donc on prend joker6Value-1 pour l'index dans le tableau
+    const signeAstrologique = signesAstrologiques[joker6Value - 1]; // Indice de 0 à 8
+
+    // Afficher le signe astrologique sous les numéros Joker+
+    document.getElementById('jokerMessage').textContent = "Votre signe astrologique associé au Joker+ est : " + signeAstrologique;
+    
+    // Afficher dans la console pour vérifier
+    console.log("La valeur de joker6 est : " + joker6Value + " et le signe astrologique est : " + signeAstrologique);
+}
+
+
+
+        // Fonction pour réinitialiser les tickets
+        function resetTicket() {
+            // Réinitialiser les numéros EuroMillions
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById(`num${i}`).textContent = '--';
+            }
+
+            // Réinitialiser les étoiles EuroMillions
+            for (let i = 1; i <= 2; i++) {
+                document.getElementById(`star${i}`).textContent = '--';
+            }
+
+            // Réinitialiser le numéro Joker+
+            document.getElementById('joker1').textContent = '--';
+            document.getElementById('joker2').textContent = '--';
+            document.getElementById('joker3').textContent = '--';
+            document.getElementById('joker4').textContent = '--';
+            document.getElementById('joker5').textContent = '--';
+            document.getElementById('joker6').textContent = '--';
+            document.getElementById('jokerMessage').textContent = 'Bonne chance pour le Joker+ !';
+        }
+    </script>
+</body>
+</html>
