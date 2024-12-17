@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        
+        #btnBlanc {
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        #btnVert {
+            background-color: green;
+            color: white;
+        }
+        
+        #btnRouge {
+            background-color: red;
+            color: white;
+        }
+        
+        #btnJaune {
+            background-color: yellow;
+        }
+
+        /* Add CSS classes for text colors */
+        .text-white { color: white; }
+        .text-green { color: green; }
+        .text-red { color: red; }
+        .text-yellow { color: yellow; }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Welcome to my website</h1>
+    <label for="name">Name : </label>
+    <input type="text" id="name">
+    <button type="button" id="submit">Submit</button>
+    <p id="result"></p>
+
+    <button id="btnBlanc" data-color="white">Blanc</button>
+    <button id="btnVert" data-color="green">Vert</button>
+    <button id="btnRouge" data-color="red">Rouge</button>
+    <button id="btnJaune" data-color="yellow">Jaune</button>
+
+    <script src="test.js"></script>
+</body>
+</html>
