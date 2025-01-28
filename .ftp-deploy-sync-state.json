@@ -1,0 +1,2141 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1728767621890,
+    "data": [
+        {
+            "type": "folder",
+            "name": "LibreOffice_Calc"
+        },
+        {
+            "type": "folder",
+            "name": "css"
+        },
+        {
+            "type": "folder",
+            "name": "docs"
+        },
+        {
+            "type": "folder",
+            "name": "html"
+        },
+        {
+            "type": "file",
+            "name": "html_table.jpg",
+            "size": 533183,
+            "hash": "2086c565bf668180668bc7267d8f9e7b1058dbab3b1a3b9db1eccdcb70daef86"
+        },
+        {
+            "type": "folder",
+            "name": "image"
+        },
+        {
+            "type": "file",
+            "name": "index.php",
+            "size": 13906,
+            "hash": "d31c89e3283e908d418945de43476b9cd4f6b7b4e1e2c4e647a9f74b31bd1d42"
+        },
+        {
+            "type": "folder",
+            "name": "js"
+        },
+        {
+            "type": "folder",
+            "name": "login"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page"
+        },
+        {
+            "type": "folder",
+            "name": "php"
+        },
+        {
+            "type": "folder",
+            "name": "style"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/Clients.pdf",
+            "size": 25115,
+            "hash": "2470557910ecc8e781ee64d8b0f7705b8ec1e92d899bd4c54d8e5aae0aae9f1b"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/Recherchev_Fruits_LÃ©gumes.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/Recherchev_Fruits_Légumes.pdf",
+            "size": 48345,
+            "hash": "9094cea83cc01bf6049dd00657a7204a2abe8e1410ddbd952148f00069f55175"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/Remise.pdf",
+            "size": 23556,
+            "hash": "581fac5bbfa2180aab77e1fbe334a01eff42303d42eadf4cb3bceaf3290337e3"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/Tableau_de_consommation.pdf",
+            "size": 141549,
+            "hash": "0954e3de6c72866230b2d8e616a86ca1ea491e07efae66bb12df136c6eb7ef1f"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/Tutti Frutti.pdf",
+            "size": 132258,
+            "hash": "fb357919a8c93fb6077feee270418cd572fc57212e6acf8b123ed05b4318a3a1"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/facture_mikro.pdf",
+            "size": 58606,
+            "hash": "47deb979e483885435462593feebcdac0717a0716679bd8a58d762f2d44e814b"
+        },
+        {
+            "type": "file",
+            "name": "LibreOffice_Calc/les_points.pdf",
+            "size": 26377,
+            "hash": "7fbeaba09f17868911a4e79f7f40d841984bc834bdd194de7a6552b84d0c468a"
+        },
+        {
+            "type": "file",
+            "name": "css/documentation_style.css",
+            "size": 737,
+            "hash": "9507216082914bfed54aa55749271d5f32b15a70d5ea362408441e7614b7bebf"
+        },
+        {
+            "type": "file",
+            "name": "css/exercice_n2_style.css",
+            "size": 741,
+            "hash": "39258a270ed64a7dd1abb805b57ea95f3f74a45829cf838830133b98802ff262"
+        },
+        {
+            "type": "file",
+            "name": "css/introduction_style.css",
+            "size": 1100,
+            "hash": "f90b52943dbec0f3d99dd789b5cf888e8d56783c0b789191e796ec41c856f048"
+        },
+        {
+            "type": "file",
+            "name": "css/page_exercice_style.css",
+            "size": 992,
+            "hash": "fc8cdefb06684bdd3cb87a96a93516d2c89eb9c2b037357c6990c361a4ca7f46"
+        },
+        {
+            "type": "file",
+            "name": "css/page_les_evaluation.css",
+            "size": 914,
+            "hash": "2f49e383584b597a5d1c2d3a10d9deeb30cd707712ce40cdda53d46c9f7362eb"
+        },
+        {
+            "type": "file",
+            "name": "css/page_les_evaluation_style.css",
+            "size": 983,
+            "hash": "2f33201b2480c4d9a21db4f95c0ea80446bb7544ae7c86b1ba1213f82944190e"
+        },
+        {
+            "type": "file",
+            "name": "docs/code de ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/code de ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/code de ÃÂÃÂÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/code de ÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/code de Ã©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/code de ÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/code de évaluation.odt",
+            "size": 20683,
+            "hash": "a9f3380855ad165d96d8eaa1a38b9e01d1050fa5525cd296bd1b21e9acc9be2c"
+        },
+        {
+            "type": "file",
+            "name": "docs/keyboard-shortcuts-window.en.fr.pdf",
+            "size": 278482,
+            "hash": "019cda4ddab21bd863fb0e3e1963cd345c60ce3dc0863cdca9a4ceb53db2faf5"
+        },
+        {
+            "type": "file",
+            "name": "docs/keyboard-shortcuts-window.pdf",
+            "size": 145725,
+            "hash": "7174b64797e735931c84a9b7a32b9727e27e4a7956e529e8b1ea539e98560f68"
+        },
+        {
+            "type": "file",
+            "name": "docs/les_balises_HTML5.pdf",
+            "size": 103041,
+            "hash": "341b693260a305a4deaed0efad6c3715daa240b8608175dd9a8f7583bf39db8d"
+        },
+        {
+            "type": "file",
+            "name": "docs/les_propriÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/les_propriÃÂÃÂÃÂÃÂ©tÃÂÃÂÃÂÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/les_propriÃÂÃÂ©tÃÂÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/les_propriÃÂ©tÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/les_propriÃ©tÃ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "docs/les_propriétés_CSS3.pdf",
+            "size": 109489,
+            "hash": "f0648c564101a361217c9ed51c7d5b7ff9f4bc31179c11893723de8152554ad1"
+        },
+        {
+            "type": "folder",
+            "name": "html/all_exercices"
+        },
+        {
+            "type": "file",
+            "name": "html/codeCesar.html",
+            "size": 3362,
+            "hash": "8b2168ecee0833950a9bc7f48a73c6d71d96f6ec2c95b68bc5f1d43118181588"
+        },
+        {
+            "type": "file",
+            "name": "html/documantation.html",
+            "size": 9358,
+            "hash": "7e9e8e698f4dc25788d70c235e8dd4e666f99e36f9d5be60f6a866fbe0097ba6"
+        },
+        {
+            "type": "file",
+            "name": "html/evaluation.html",
+            "size": 1990,
+            "hash": "559f4a3f30e93ba3a0ed64fd747e2c55d749538dd86cc52bcaf0f80828b858c8"
+        },
+        {
+            "type": "file",
+            "name": "html/evaluation2.html",
+            "size": 4864,
+            "hash": "366743883d6b2a807ffb09d9770ba0cec347c6c665e6f3de26615fbacdd2ca1b"
+        },
+        {
+            "type": "file",
+            "name": "html/evaluation_n1.html",
+            "size": 1990,
+            "hash": "559f4a3f30e93ba3a0ed64fd747e2c55d749538dd86cc52bcaf0f80828b858c8"
+        },
+        {
+            "type": "file",
+            "name": "html/hihi.html",
+            "size": 8354,
+            "hash": "9c8c9390096dd634fef316d97b63e0cdddf8e9490407d4eeec74dc476a9c760a"
+        },
+        {
+            "type": "file",
+            "name": "html/index.css",
+            "size": 2260,
+            "hash": "b27b1fe93003f8d14708e2c42e9bc0f428dbc6e1604288505c4da7c41de35dd6"
+        },
+        {
+            "type": "file",
+            "name": "html/introduction.html",
+            "size": 4655,
+            "hash": "9316e71a0add1ec09ac7d2c78be3ab51e311f5cd435640c26770a6de6a1491cb"
+        },
+        {
+            "type": "file",
+            "name": "html/js.html",
+            "size": 1861,
+            "hash": "d3c7fa41a5353193b6c4ed27c46df40443c8a5c12b49dff7a10a0532b1c1c2f9"
+        },
+        {
+            "type": "folder",
+            "name": "html/les_pages_exercices"
+        },
+        {
+            "type": "file",
+            "name": "html/page_exercice.html",
+            "size": 5690,
+            "hash": "c4477105a95b0ddd046abf20f898cfb936a5a6c4c7c553a92778d1dc0e775916"
+        },
+        {
+            "type": "file",
+            "name": "html/page_les_evaluation.html",
+            "size": 1656,
+            "hash": "a270ab888d5108296eea5cca04616a5619f6881759d027c524b1649cc6484ef2"
+        },
+        {
+            "type": "file",
+            "name": "html/tableurs.html",
+            "size": 17358,
+            "hash": "1c6f8b3bf6252825b941dd03bf793d813fa90985163ebbb4502983e6fcb237eb"
+        },
+        {
+            "type": "file",
+            "name": "image/Logo_OpenClassrooms.png",
+            "size": 7578,
+            "hash": "26deeb9479523ef37ed37b1d058dd68c679e191efdb6e67952375e153a62d155"
+        },
+        {
+            "type": "file",
+            "name": "image/AllemagneDrapeau.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "image/MonDrapeau.png",
+            "size": 6452,
+            "hash": "f68f7f2694e58de5c0e769c07da4d800e44d02cada381bcf5841b7d4480bc1c3"
+        },
+        {
+            "type": "file",
+            "name": "image/MonDrapeau.svg",
+            "size": 27543,
+            "hash": "0609a41db3a9d00b73f94021ad9f4c880e5eb85103432dcd193a694c8fb578c6"
+        },
+        {
+            "type": "file",
+            "name": "image/MonLOGO.png",
+            "size": 15461,
+            "hash": "63311ef1838a5689f740997411493a8e16527f4d8166fc24f3700463bda409f8"
+        },
+        {
+            "type": "file",
+            "name": "image/MonLOGO.svg",
+            "size": 4113,
+            "hash": "bf69ed5d201c78ff41ec3b5e5d127928450932a4573bed89df8b49268758e524"
+        },
+        {
+            "type": "file",
+            "name": "image/W3Schools_logo.png",
+            "size": 66925,
+            "hash": "a6b652e47493c198fed6c1c38711a992744a9f86f900322b2faa0560d28c064b"
+        },
+        {
+            "type": "file",
+            "name": "image/abstract-digital-grid-black-background.jpg",
+            "size": 635017,
+            "hash": "851d4a4342bbea014b38a4d19bdcea6214e5f08c9e1f39a9b14603bf844f2ce9"
+        },
+        {
+            "type": "file",
+            "name": "image/code_academylogo.png",
+            "size": 2578,
+            "hash": "cfa4b2256a5b2fdb913fe6ada2d484a1b6d60a3f95ee06956042a90076767483"
+        },
+        {
+            "type": "file",
+            "name": "image/css3_logo.png",
+            "size": 67843,
+            "hash": "f1ccbf03a6cd6d3bb52f937f8bf0322e069aab54065c135aac31728702e23ca0"
+        },
+        {
+            "type": "file",
+            "name": "image/css_logo.png",
+            "size": 45223,
+            "hash": "35fe1a3ff1ebb8278ef69d78f82a87258ed9c9917c617858b64548d133e2e1d2"
+        },
+        {
+            "type": "file",
+            "name": "image/drapeauLuxembourg.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "image/exerciseBackIMG.jpg",
+            "size": 963002,
+            "hash": "18c7f888fe7e8513c19e225717242dd79311c8daa1dfeb74f6702fff313cefcb"
+        },
+        {
+            "type": "file",
+            "name": "image/drapeauMaroc.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "image/franceDrapeau.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "image/freecodecampLOGO.png",
+            "size": 3292,
+            "hash": "dc2456af9d06059ed536e40b92355a4da28c460a7bf64ae2727e5d47f650c3e3"
+        },
+        {
+            "type": "file",
+            "name": "image/html_et_css.png",
+            "size": 4504,
+            "hash": "dbb6a5ef79c21cc959c20dd38bfa0329e530a1597d5d0dfb42208534ea9e2439"
+        },
+        {
+            "type": "file",
+            "name": "image/html_logo.png",
+            "size": 38667,
+            "hash": "bf727f0dd4dc5536211b27bbe40f90a88518e359c250d8e651f9ec4e3cfbd656"
+        },
+        {
+            "type": "folder",
+            "name": "image/icons"
+        },
+        {
+            "type": "file",
+            "name": "image/index_backgoundIMG.jpg",
+            "size": 480613,
+            "hash": "4912844b4962860591cef6a8a6b2ad851cbd7d9976a51837513046cfe3b1669a"
+        },
+        {
+            "type": "file",
+            "name": "image/logoalsa.png",
+            "size": 6522,
+            "hash": "f63eb29e3a8e3695ccbd04d7bbfcaf0c5114a58fc6a3dc1d57adfced98bc81cf"
+        },
+        {
+            "type": "file",
+            "name": "image/paybasDrapeau.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "image/play.png",
+            "size": 1258,
+            "hash": "2c9c42eb9f99a467d22d22ee7165a56a7bd05ca1c2f1647b23f208ef6e2c7735"
+        },
+        {
+            "type": "file",
+            "name": "image/vscodiumLOGO.png",
+            "size": 343920,
+            "hash": "a695fd170d7edc652466f179b0e759c14f73e29d2a7f43a68d1168b6214e5481"
+        },
+        {
+            "type": "file",
+            "name": "js/echellesSerpents.js",
+            "size": 1432,
+            "hash": "a55f010b9779d5d180c3d1a9f23e4e2b2a46ee8abb813369dfb014a5f2f1d220"
+        },
+        {
+            "type": "folder",
+            "name": "login/.vscode"
+        },
+        {
+            "type": "file",
+            "name": "login/activate.php",
+            "size": 1822,
+            "hash": "16d314135fc34ee0b82e90cb56a132f17ffd9682a479c62061e4231efa692f6a"
+        },
+        {
+            "type": "file",
+            "name": "login/check_activation.php",
+            "size": 561,
+            "hash": "ae66bb24c3517cd60d4bf64165ba82c431b67dfe4a31a70e67a91b3304c87d1d"
+        },
+        {
+            "type": "folder",
+            "name": "login/extra_staf"
+        },
+        {
+            "type": "folder",
+            "name": "login/login"
+        },
+        {
+            "type": "file",
+            "name": "login/login.php",
+            "size": 2741,
+            "hash": "569dd6076f0ed56753c363248a8354889eedbc2c5644bf18022ecab5f966a5cb"
+        },
+        {
+            "type": "file",
+            "name": "login/loading.php",
+            "size": 2226,
+            "hash": "ee8ba44c5789ade66a84242783a6345c77101f0d8747671099dc94d17b80da67"
+        },
+        {
+            "type": "file",
+            "name": "login/signup.php",
+            "size": 4107,
+            "hash": "fce014d88d47d31cd97adef412380ebe7ff82dee1c7218e75caef43d6e352288"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/admin_panel.php",
+            "size": 1403,
+            "hash": "d9724fc1e7b20910838ddfebf96acafa1712548e29c82c2e00bc000c11de3ce8"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/background_photo.jpg",
+            "size": 1856676,
+            "hash": "5e72c384b5751e1412807e0882ea841fb840ee7ce36ea374d08f94e5d7d58f05"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/delete.php",
+            "size": 523,
+            "hash": "c5e2e1487d12430bf5c853d13dd74daccc6397dc7394081479f18ead8f8fe934"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/delete_account.php",
+            "size": 4050,
+            "hash": "851b8520204d3ad1e58ba8661f26f61e3e479e790fc532530b7a2214fb0dd828"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/delete_account_process.php",
+            "size": 766,
+            "hash": "b0024d19f407c0e3a313e7cbfd9411f041925e0c713312c811a543b6876b92d3"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/extra_staf"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/html_table.jpg",
+            "size": 533183,
+            "hash": "2086c565bf668180668bc7267d8f9e7b1058dbab3b1a3b9db1eccdcb70daef86"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/index.php",
+            "size": 2698,
+            "hash": "b9ace90443ae8b06bcf04933a26389c388f039851c66ca0e38135b376daf67b4"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/login.php",
+            "size": 2420,
+            "hash": "129154ecc05e44e55c96065310ad3da8ebef219adf8e77606bfb017fd7fd2e97"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/signup.php",
+            "size": 12646,
+            "hash": "39577d4d4e3ec5631d4ec2d58e402d0f7431f74e250348598d83a9bbc4708dd3"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/style.css",
+            "size": 3710,
+            "hash": "4aa61b2fa0af2c8d0dacc2d530bd8dd87d5211e521a7f6ee47ab3447e331a61e"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/welcome.php",
+            "size": 888,
+            "hash": "cffc9c0964e0aa2fae7ae682b2f706a2391c931db03b67f813aa8ba87bf9c614"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/welcome_style.css",
+            "size": 2297,
+            "hash": "a12d4df53f210df465368565470ecbe67725bf99d8cdc674b3f66e64e0f8f9ac"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/workout"
+        },
+        {
+            "type": "folder",
+            "name": "php/Connection"
+        },
+        {
+            "type": "file",
+            "name": "php/calculIMC.html",
+            "size": 883,
+            "hash": "b1d59a8365067397d4ffb69b45e32db31d41e6527553904979b1bf064d5634a6"
+        },
+        {
+            "type": "file",
+            "name": "php/calculIMC.php",
+            "size": 140,
+            "hash": "9dea92495bec837cda25709c9364a78b082e41c7a3482e343aa792ed286a4a47"
+        },
+        {
+            "type": "file",
+            "name": "php/calcul_IMC.php",
+            "size": 3902,
+            "hash": "a28df93985a1f28610e49d7697f40252e34423ad9c6c2cfe354013bb162daa36"
+        },
+        {
+            "type": "file",
+            "name": "php/connexion.php",
+            "size": 195,
+            "hash": "98b9c14b6b84cd803c2d9010e9eb423c662294097f9c9b6bfe85444057d36642"
+        },
+        {
+            "type": "file",
+            "name": "php/converteurPHP.html",
+            "size": 1579,
+            "hash": "285fd316fdac3be2012563ac5cfaf46a7ba5d54eae2346050b9b901444fd63ce"
+        },
+        {
+            "type": "file",
+            "name": "php/converteurPHP.php",
+            "size": 1603,
+            "hash": "c3a7f8c3f3362d803bbc05f6685afebeed53d7b554546ea6257a89b7fe753eb1"
+        },
+        {
+            "type": "file",
+            "name": "php/inscription.php",
+            "size": 1021,
+            "hash": "d2620f506ab702ef641d49919a385d3ece885e3d1c3dcda1842427a62b841039"
+        },
+        {
+            "type": "file",
+            "name": "php/surfaceTriangle.php",
+            "size": 180,
+            "hash": "0f783af430e3d2bf4328f70bef225452e7b7296819c4cf51343525db847064b2"
+        },
+        {
+            "type": "file",
+            "name": "php/table_multiplication.php",
+            "size": 1590,
+            "hash": "22d328bdd4b0fbf10226495dd0a4391e52dac2c7fb8b2c638a5e6cff5a7b3148"
+        },
+        {
+            "type": "file",
+            "name": "php/volume_pyramide.php",
+            "size": 1591,
+            "hash": "283da004dd0d567c40cae5b9c35ef091fd109743f66b34800048826f63c9026e"
+        },
+        {
+            "type": "file",
+            "name": "style/style.css",
+            "size": 1823,
+            "hash": "e0e2f3eec7f524cb605fb5131625699806eb0fde2a8fd742d4f4095dab9cacaa"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/EchellesSerpents2Joueurs.html",
+            "size": 1555,
+            "hash": "68ad89b160c27e70cdd48d41e7b516f12d6e24fad3a48f462f65a4c414c08cf2"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/calculIMC.html",
+            "size": 2475,
+            "hash": "166faaa8f1fff0bc9e32dde6adf3467161fe81bede7e7efef1ad16c012a3cc72"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/chifimi_v2.0.html",
+            "size": 1187,
+            "hash": "28f5630d07f93da1f2f4ba293c909283a47f89b731d7fb2a918ca38abcc1b194"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/converteurJS.html",
+            "size": 2104,
+            "hash": "0d5d6fe80989bbb553129ffaf300fc7b2ceee252bf005532190c69bbe514ba21"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/convertuerJS.html",
+            "size": 1474,
+            "hash": "831d1d0e0be45213f314e740826d4afde6b83c77c9848325e8a94903d54a3151"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/echelleSerpents.html",
+            "size": 1009,
+            "hash": "8e112cde6d03cc3c05a891cfc579884469c3f0f2dec8ba41bbc40fbfbebe42d2"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/evaluation2.py",
+            "size": 477,
+            "hash": "c0beeef539b7baabfa3d925582b62631b238707b83c43905de761ab87cf19ff6"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/evaluation3.html",
+            "size": 578,
+            "hash": "33b6e11377b9a3a8a476ce9371568f66181bd3a628228946664c592147f243f1"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n1.html",
+            "size": 6723,
+            "hash": "5bd61eb62681e621c97be594eb74465ba0e3e94c0678e023bf0680ce9e71284e"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n10.html",
+            "size": 6989,
+            "hash": "40d3e05ddc14f6f63fdcff634b6ddc8b5da6c0d4bc185a67c6799d556303ee46"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n2.html",
+            "size": 1897,
+            "hash": "700255add71fe8a241c05c4aa7a0f98ce594c29dc8ef41c761d325fac9ae68b8"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n3.html",
+            "size": 2309,
+            "hash": "5f832a5ccd2bbd68b1731bdc344702f4e6502565553e4dcfb62721d876726103"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n4.html",
+            "size": 2403,
+            "hash": "64424646f7745983fd82c5f6d5f6a00f8a8eac180c695ef28461bac7eec67fe1"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n5.html",
+            "size": 1312,
+            "hash": "c385990e74d5810f082ce9b01bf4a369a1696779f35e4e12bad14b76e7b35d48"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n6.html",
+            "size": 892,
+            "hash": "03f1dcddfb4e99c3eac061f5539c0e26bca6c0f35b3d90205c9aed208604d43c"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n7.html",
+            "size": 816,
+            "hash": "d4e874b5993fca999e0eca91296a0e3c4e69ff9e8c723023d3303f120b351678"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n8.html",
+            "size": 2860,
+            "hash": "da29061d8a3efc4e7867e46b1cbb57a55d51daf2bbbc10e1e68c89d010f2c025"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/exercice_n9.html",
+            "size": 6324,
+            "hash": "b8d8573bfc60f094377e3a936a1ec251a413c5be031c82d1218b21e666336208"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/flexbox.html",
+            "size": 205,
+            "hash": "aaa7ae8ca3bca72c2642ecc577e2a8a8bee4e7492b1c8f967f6262e7437f32be"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/hello_test.html",
+            "size": 3086,
+            "hash": "96ca606d31145c46038bf360ab60125e2708ea4f2bc0cbdeece1b269ba4a0592"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/horaire.html",
+            "size": 7173,
+            "hash": "67e813b711f120312a4f7639a487525ca70cc9cf1087d19429b550fad9def9fb"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/inscription.html",
+            "size": 7762,
+            "hash": "715e11db37929cb1143bd77d25a24525d2c18e26eaf68fe3deb582e9c4036f47"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/inscription_ancien.html",
+            "size": 2127,
+            "hash": "96d58e25bdaa74d0698231d614c03b89d5e019a8af061055a70097132edbb0ea"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/leJeuDames.html",
+            "size": 10665,
+            "hash": "bdd798a083bfa33d56b4ee4aae6f78a80f6cf2777025e3b5ac02b1fe4a3f0195"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/media.html",
+            "size": 639,
+            "hash": "dd02330b38312c872ea74754e3d2aef5d77ae066679dd10302c7d29c896c2fcd"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/rpg.html",
+            "size": 8968,
+            "hash": "2ceeb064906fd480affa421af65c4b0c1c81b3f80339947dfbe3bc27c94ca260"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/somme2Nombre.html",
+            "size": 3598,
+            "hash": "03150377723e0c6599d818d33befaaf247ce14900ee5c9c0e86de4e1dd444cf8"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/somme2Nombre_nouvelleMiseAJour.html",
+            "size": 5430,
+            "hash": "870a213e7cce6c638d09e7acd7ed415aa913c4d050d639124e1332eaa237583a"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/surfaceTriangle.html",
+            "size": 1735,
+            "hash": "3c2ac192356341020654e18ff2dfc5df8f564a165980789d94b351ca7e11f72f"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/table_multiplication.html",
+            "size": 3155,
+            "hash": "fea88f768178bfe1cb49162fb592d8a59ed7834f3326a922a00cdbe570894a90"
+        },
+        {
+            "type": "file",
+            "name": "html/all_exercices/volume_pyramide.html",
+            "size": 3211,
+            "hash": "29d59e7dd30bf941bdd9ce528188e6758371f18c602e74e5135c1a7104fe6219"
+        },
+        {
+            "type": "folder",
+            "name": "html/les_pages_exercices/images"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/README.md",
+            "size": 527,
+            "hash": "cbfbe5e6959e450cff16d9d30bc8d4469e29d183b69fc4cc862c93eba2a184ae"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/index.html",
+            "size": 14807,
+            "hash": "bc9af6d1faa07cd12341ccee53858bf6c8635497809bc97eed565f2916d09732"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/script.js",
+            "size": 6791,
+            "hash": "dc46fa6cc3123bf914518662cd51847cb0aedb64791fda3ee315a6c626cc7d7b"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/style.css",
+            "size": 5357,
+            "hash": "f32da21697490524b8ecec510d389a83339c2b485ee437fad3a8ce6d1711e645"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/bishop.png",
+            "size": 66435,
+            "hash": "8f29f7caf52613d44875154e39198870cc0646feea3c4497ec7f7c57ce232b81"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/king.png",
+            "size": 73918,
+            "hash": "9ed473910e17636e00a4c2cbf91b5aef757a7e66eebc2d1c200a8ae672a25fba"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/knight.png",
+            "size": 72037,
+            "hash": "d69d029342752a98da1e374ae24521681b2c47da644f84e064c7183b0a4c8913"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/pawn.png",
+            "size": 38557,
+            "hash": "3693137d9e54a9c11269f98e02e27f793136938bff410cd549d98316d56eaeb4"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/queen.png",
+            "size": 79386,
+            "hash": "530616680f42ac7f021d0e31223fce0db666228193ab46639623c6c2b4c35d97"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/rook.png",
+            "size": 65126,
+            "hash": "c102fdca2ec54480d03a083de5d98d511ea06b95a0b5a7273bc11d88e83cbbc7"
+        },
+        {
+            "type": "folder",
+            "name": "image/icons/white_chess"
+        },
+        {
+            "type": "file",
+            "name": "login/.vscode/sftp.json",
+            "size": 267,
+            "hash": "4b232aa1cfc5c76c8a22ced6cf6165c4a2b922f89cff16b57935cd16438d50db"
+        },
+        {
+            "type": "file",
+            "name": "login/extra_staf/loading_page_when_signup.php",
+            "size": 3082,
+            "hash": "aba867e161c87d194c991aa83b5d340fa96f226ce8852d669c4d5dadac95d3a2"
+        },
+        {
+            "type": "file",
+            "name": "login/login/activate.php",
+            "size": 1837,
+            "hash": "a6debfc5fee18e52b9ed1d99c0f80e8ec1198f2fdaffd4099ada00cffe0d1edd"
+        },
+        {
+            "type": "folder",
+            "name": "login/login/extra_staf"
+        },
+        {
+            "type": "file",
+            "name": "login/login/login.php",
+            "size": 2776,
+            "hash": "f8c4cd88b67098a134ef56cf55764b0762b943a118a1ccbe9bfac2af170578c9"
+        },
+        {
+            "type": "file",
+            "name": "login/login/signup.php",
+            "size": 4199,
+            "hash": "f92d1d09d6ca87e4dab1275f6ed598b687d2c4c1e37102f78e07c4dbc58bd22b"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/extra_staf/loading_page_when_delete_account.php",
+            "size": 2305,
+            "hash": "4573ca7c7ba5c51aa7369a4a53cbbde029712e1624721fed2e9a0919b221d090"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/extra_staf/loading_page_when_signup.html",
+            "size": 2240,
+            "hash": "511a489e872e003b9a4395b930fe3ab0843966a30a7436dd7b48da7779e18cc3"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/config.php",
+            "size": 395,
+            "hash": "4efbef2ffbf2ad8532c80b2b4fd5ba8399df3ba618a2124528e4e7362398b7e8"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/css"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/docs"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/edit_profile.php",
+            "size": 5687,
+            "hash": "5c8edf8334225f7fc649bc7f60cce176f0dd5e858678d253ac62009a695ce9ba"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/html"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html_table.jpg",
+            "size": 533183,
+            "hash": "2086c565bf668180668bc7267d8f9e7b1058dbab3b1a3b9db1eccdcb70daef86"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/image"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/index.php",
+            "size": 16333,
+            "hash": "5b3674e51b669991dcf03f52e4330be3247dd139bfe2156c87f48690e8602db1"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/js"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/login_signup_page"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/logout.php",
+            "size": 114,
+            "hash": "b7490507ba2e764bf75092d322ff5f702a059509289ca00f451ab5555ace83f7"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/php"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/profile.php",
+            "size": 8024,
+            "hash": "e6366259b8459e5e6c812f816fc2b1b3cba05949c94d8572e10c5852e15ce199"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/style"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/workout/index.php",
+            "size": 859,
+            "hash": "770eb07c346d460322d59bddc5b1c4f0da56237a8690c81ca134f82bbf2dd273"
+        },
+        {
+            "type": "file",
+            "name": "php/Connection/connection.html",
+            "size": 1802,
+            "hash": "50a707a7de26f4516c0cbbdb207c6898132c36a08e99725d21566d6b2702020b"
+        },
+        {
+            "type": "file",
+            "name": "php/Connection/connection.php",
+            "size": 827,
+            "hash": "1b75a294494e84d687a729132d12d9deb26285af199180434baca0967326442a"
+        },
+        {
+            "type": "file",
+            "name": "php/Connection/connection_success.html",
+            "size": 275,
+            "hash": "95f100e4d11a62962498e10ef44a4c80dd629dab87c4cf8a5e65033a525f5c13"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/Alson GC.jpg",
+            "size": 64125,
+            "hash": "79055d48ec67d5ac2f0f079b721ce5f3c46fc6a12f571c8cab44d795f0a8bc2c"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/Sarita Limbu.jpg",
+            "size": 58407,
+            "hash": "c4ed520ee79eebaa30066776223dc73a51fd34b713ed25dc671bb83305d85659"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/Sonal Gharti.jpg",
+            "size": 86237,
+            "hash": "2acd3a7a327a0e4f492b980a0eb382e7b817e82561bac07760381d5dafb649fd"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/csv.png",
+            "size": 16417,
+            "hash": "139601c7788d42ab7321c1b45224d5a373c517cfe0b81e09523dc4fc488120bd"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/excel.png",
+            "size": 14713,
+            "hash": "af5bb421d1164a43ac24a684eef6f48b585d9f85636d88044b7b674ec8b727c5"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/exercice01.png",
+            "size": 1540839,
+            "hash": "cace65479f8f0ab469726361b720ada20dbb074783ee6c5604fa05453ac6132c"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/export.png",
+            "size": 5012,
+            "hash": "036dae26f9296a93595a9bb7745baeb16f49d5aa182f0ef67d9f5cf9077781c6"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/html_table.jpg",
+            "size": 533183,
+            "hash": "2086c565bf668180668bc7267d8f9e7b1058dbab3b1a3b9db1eccdcb70daef86"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/json.png",
+            "size": 19196,
+            "hash": "db923f335601dfa07fd6673b5696dceb4511db47ded39471fb3fa715499cf27e"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/pdf.png",
+            "size": 11827,
+            "hash": "c5dbc6a99759ea764b45a7fff2462ec641ad6c510028aab465652f15349e1142"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/screenshot.jpg",
+            "size": 147673,
+            "hash": "3741f415b8a28743f4c74925ac4b08344912ca784d55b406b7c49618b19d73a1"
+        },
+        {
+            "type": "file",
+            "name": "html/les_pages_exercices/images/search.png",
+            "size": 24983,
+            "hash": "7500f965fc0d12846912637137c74c3dd6532cbf9b667d58f11fe35571803a16"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/white_chess/bishop.png",
+            "size": 57332,
+            "hash": "98a7fc561d832663b4f0b16ac0e68f94305518e015fc6ae2a5c0e9abb005322c"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/white_chess/king.png",
+            "size": 64957,
+            "hash": "7b3897768071a02baf2c92c4eff43939b2ddf9c024213bcaae283f560318d1e9"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/white_chess/knight.png",
+            "size": 65818,
+            "hash": "39f1b509512fed3f39e8b896a61db78484fdda92bb38a85ea2f0a68a478cbcc6"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/white_chess/pawn.png",
+            "size": 34536,
+            "hash": "40112945f2a62ff9e225e47fc91eca061fe16b3d2dfa3edf237146665ec2c3cc"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/white_chess/queen.png",
+            "size": 65545,
+            "hash": "e34cc83fc30bcea4956ad71e239db3af3846501da50db34c02132ffbd3d815fd"
+        },
+        {
+            "type": "file",
+            "name": "image/icons/white_chess/rook.png",
+            "size": 61547,
+            "hash": "6d75a9107f8ca28d5e04a97846c40d4c93580e8e4031a5b63c4e84754ac66d22"
+        },
+        {
+            "type": "file",
+            "name": "login/login/extra_staf/loading_page_when_signup.html",
+            "size": 2243,
+            "hash": "2df4785e92feceae79624c3e8f66dfb2f597ea1c7b45c653d4b5440d107713c2"
+        },
+        {
+            "type": "file",
+            "name": "login/login/extra_staf/loading_page_when_signup.php",
+            "size": 3083,
+            "hash": "4a3aba2bc63f0020acdbc5e7b6d5ad4f8afee92fb8e2b22f0c9f6a43819b69ed"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/Clients.pdf",
+            "size": 25115,
+            "hash": "2470557910ecc8e781ee64d8b0f7705b8ec1e92d899bd4c54d8e5aae0aae9f1b"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/Recherchev_Fruits_LÃ©gumes.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/Recherchev_Fruits_Légumes.pdf",
+            "size": 48345,
+            "hash": "9094cea83cc01bf6049dd00657a7204a2abe8e1410ddbd952148f00069f55175"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/Remise.pdf",
+            "size": 23556,
+            "hash": "581fac5bbfa2180aab77e1fbe334a01eff42303d42eadf4cb3bceaf3290337e3"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/Tableau_de_consommation.pdf",
+            "size": 141549,
+            "hash": "0954e3de6c72866230b2d8e616a86ca1ea491e07efae66bb12df136c6eb7ef1f"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/Tutti Frutti.pdf",
+            "size": 132258,
+            "hash": "fb357919a8c93fb6077feee270418cd572fc57212e6acf8b123ed05b4318a3a1"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/facture_mikro.pdf",
+            "size": 58606,
+            "hash": "47deb979e483885435462593feebcdac0717a0716679bd8a58d762f2d44e814b"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/LibreOffice_Calc/les_points.pdf",
+            "size": 26377,
+            "hash": "7fbeaba09f17868911a4e79f7f40d841984bc834bdd194de7a6552b84d0c468a"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/css/documentation_style.css",
+            "size": 737,
+            "hash": "9507216082914bfed54aa55749271d5f32b15a70d5ea362408441e7614b7bebf"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/css/exercice_n2_style.css",
+            "size": 741,
+            "hash": "39258a270ed64a7dd1abb805b57ea95f3f74a45829cf838830133b98802ff262"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/css/introduction_style.css",
+            "size": 1100,
+            "hash": "f90b52943dbec0f3d99dd789b5cf888e8d56783c0b789191e796ec41c856f048"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/css/page_exercice_style.css",
+            "size": 992,
+            "hash": "fc8cdefb06684bdd3cb87a96a93516d2c89eb9c2b037357c6990c361a4ca7f46"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/css/page_les_evaluation.css",
+            "size": 914,
+            "hash": "2f49e383584b597a5d1c2d3a10d9deeb30cd707712ce40cdda53d46c9f7362eb"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/css/page_les_evaluation_style.css",
+            "size": 983,
+            "hash": "2f33201b2480c4d9a21db4f95c0ea80446bb7544ae7c86b1ba1213f82944190e"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/code de ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/code de ÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/code de ÃÂÃÂÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/code de ÃÂÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/code de ÃÂ©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/code de Ã©valuation.odt",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/code de évaluation.odt",
+            "size": 20683,
+            "hash": "a9f3380855ad165d96d8eaa1a38b9e01d1050fa5525cd296bd1b21e9acc9be2c"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/keyboard-shortcuts-window.en.fr.pdf",
+            "size": 278482,
+            "hash": "019cda4ddab21bd863fb0e3e1963cd345c60ce3dc0863cdca9a4ceb53db2faf5"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/keyboard-shortcuts-window.pdf",
+            "size": 145725,
+            "hash": "7174b64797e735931c84a9b7a32b9727e27e4a7956e529e8b1ea539e98560f68"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/les_balises_HTML5.pdf",
+            "size": 103041,
+            "hash": "341b693260a305a4deaed0efad6c3715daa240b8608175dd9a8f7583bf39db8d"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/les_propriÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©tÃÂÃÂÃÂÃÂÃÂÃÂÃÂÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/les_propriÃÂÃÂÃÂÃÂ©tÃÂÃÂÃÂÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/les_propriÃÂÃÂ©tÃÂÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/les_propriÃÂ©tÃÂ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/les_propriÃ©tÃ©s_CSS3.pdf",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/docs/les_propriétés_CSS3.pdf",
+            "size": 109489,
+            "hash": "f0648c564101a361217c9ed51c7d5b7ff9f4bc31179c11893723de8152554ad1"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/html/all_exercices"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/codeCesar.html",
+            "size": 3362,
+            "hash": "8b2168ecee0833950a9bc7f48a73c6d71d96f6ec2c95b68bc5f1d43118181588"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/conexion.html",
+            "size": 800,
+            "hash": "5d07703cdca51367418ec51e19d942f24dd7d177840a5cc806265a88c25194a4"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/connexion.html",
+            "size": 2487,
+            "hash": "6006d66e9bc374987e03df3917a548965e05dc2f4c8f3fdba4ccd365f46e442c"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/connexion2_0.html",
+            "size": 3362,
+            "hash": "f535ef411ad50537555afec53783c7bce544786eac0985b4034c5b902dffe3be"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/connexion_03.html",
+            "size": 3946,
+            "hash": "08c30a0078fa531d28fb979d1d36e64c987d6e67a43e4560ac549e0cdf69b17c"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/documantation.html",
+            "size": 9358,
+            "hash": "7e9e8e698f4dc25788d70c235e8dd4e666f99e36f9d5be60f6a866fbe0097ba6"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/evaluation.html",
+            "size": 1990,
+            "hash": "559f4a3f30e93ba3a0ed64fd747e2c55d749538dd86cc52bcaf0f80828b858c8"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/evaluation2.html",
+            "size": 4864,
+            "hash": "366743883d6b2a807ffb09d9770ba0cec347c6c665e6f3de26615fbacdd2ca1b"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/evaluation_n1.html",
+            "size": 1990,
+            "hash": "559f4a3f30e93ba3a0ed64fd747e2c55d749538dd86cc52bcaf0f80828b858c8"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/hihi.html",
+            "size": 8354,
+            "hash": "9c8c9390096dd634fef316d97b63e0cdddf8e9490407d4eeec74dc476a9c760a"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/index.css",
+            "size": 2260,
+            "hash": "b27b1fe93003f8d14708e2c42e9bc0f428dbc6e1604288505c4da7c41de35dd6"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/introduction.html",
+            "size": 4655,
+            "hash": "9316e71a0add1ec09ac7d2c78be3ab51e311f5cd435640c26770a6de6a1491cb"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/js.html",
+            "size": 1861,
+            "hash": "d3c7fa41a5353193b6c4ed27c46df40443c8a5c12b49dff7a10a0532b1c1c2f9"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/page_exercice.html",
+            "size": 5690,
+            "hash": "c4477105a95b0ddd046abf20f898cfb936a5a6c4c7c553a92778d1dc0e775916"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/page_les_evaluation.html",
+            "size": 1656,
+            "hash": "a270ab888d5108296eea5cca04616a5619f6881759d027c524b1649cc6484ef2"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/tableurs.html",
+            "size": 17358,
+            "hash": "1c6f8b3bf6252825b941dd03bf793d813fa90985163ebbb4502983e6fcb237eb"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/AllemagneDrapeau.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/Logo_OpenClassrooms.png",
+            "size": 7578,
+            "hash": "26deeb9479523ef37ed37b1d058dd68c679e191efdb6e67952375e153a62d155"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/MonDrapeau.png",
+            "size": 6452,
+            "hash": "f68f7f2694e58de5c0e769c07da4d800e44d02cada381bcf5841b7d4480bc1c3"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/MonDrapeau.svg",
+            "size": 27543,
+            "hash": "0609a41db3a9d00b73f94021ad9f4c880e5eb85103432dcd193a694c8fb578c6"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/MonLOGO.png",
+            "size": 15461,
+            "hash": "63311ef1838a5689f740997411493a8e16527f4d8166fc24f3700463bda409f8"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/MonLOGO.svg",
+            "size": 4113,
+            "hash": "bf69ed5d201c78ff41ec3b5e5d127928450932a4573bed89df8b49268758e524"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/W3Schools_logo.png",
+            "size": 66925,
+            "hash": "a6b652e47493c198fed6c1c38711a992744a9f86f900322b2faa0560d28c064b"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/abstract-digital-grid-black-background.jpg",
+            "size": 635017,
+            "hash": "851d4a4342bbea014b38a4d19bdcea6214e5f08c9e1f39a9b14603bf844f2ce9"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/code_academylogo.png",
+            "size": 2578,
+            "hash": "cfa4b2256a5b2fdb913fe6ada2d484a1b6d60a3f95ee06956042a90076767483"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/css3_logo.png",
+            "size": 67843,
+            "hash": "f1ccbf03a6cd6d3bb52f937f8bf0322e069aab54065c135aac31728702e23ca0"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/css_logo.png",
+            "size": 45223,
+            "hash": "35fe1a3ff1ebb8278ef69d78f82a87258ed9c9917c617858b64548d133e2e1d2"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/drapeauLuxembourg.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/drapeauMaroc.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/exerciseBackIMG.jpg",
+            "size": 963002,
+            "hash": "18c7f888fe7e8513c19e225717242dd79311c8daa1dfeb74f6702fff313cefcb"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/franceDrapeau.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/freecodecampLOGO.png",
+            "size": 3292,
+            "hash": "dc2456af9d06059ed536e40b92355a4da28c460a7bf64ae2727e5d47f650c3e3"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/html_et_css.png",
+            "size": 4504,
+            "hash": "dbb6a5ef79c21cc959c20dd38bfa0329e530a1597d5d0dfb42208534ea9e2439"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/html_logo.png",
+            "size": 38667,
+            "hash": "bf727f0dd4dc5536211b27bbe40f90a88518e359c250d8e651f9ec4e3cfbd656"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/index_backgoundIMG.jpg",
+            "size": 480613,
+            "hash": "4912844b4962860591cef6a8a6b2ad851cbd7d9976a51837513046cfe3b1669a"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/logoalsa.png",
+            "size": 6522,
+            "hash": "f63eb29e3a8e3695ccbd04d7bbfcaf0c5114a58fc6a3dc1d57adfced98bc81cf"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/paybasDrapeau.png",
+            "size": 0,
+            "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/play.png",
+            "size": 1258,
+            "hash": "2c9c42eb9f99a467d22d22ee7165a56a7bd05ca1c2f1647b23f208ef6e2c7735"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/vscodiumLOGO.png",
+            "size": 343920,
+            "hash": "a695fd170d7edc652466f179b0e759c14f73e29d2a7f43a68d1168b6214e5481"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/image/icons"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/js/echellesSerpents.js",
+            "size": 1432,
+            "hash": "a55f010b9779d5d180c3d1a9f23e4e2b2a46ee8abb813369dfb014a5f2f1d220"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/admin_panel.php",
+            "size": 1403,
+            "hash": "d9724fc1e7b20910838ddfebf96acafa1712548e29c82c2e00bc000c11de3ce8"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/background_photo.jpg",
+            "size": 1856676,
+            "hash": "5e72c384b5751e1412807e0882ea841fb840ee7ce36ea374d08f94e5d7d58f05"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/delete.php",
+            "size": 523,
+            "hash": "c5e2e1487d12430bf5c853d13dd74daccc6397dc7394081479f18ead8f8fe934"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/delete_account.php",
+            "size": 631,
+            "hash": "ccbcb66adf421958ea13f390ac70774c20710c07113836e21baa4409fcd296f5"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/delete_account_process.php",
+            "size": 928,
+            "hash": "014149af10c0e5045fdd168061d90c16b6016be1f47f4d43b854be5866b92a3a"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/login_signup_page/extra_staf"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/index.php",
+            "size": 2667,
+            "hash": "5538efe26dcd4935ce70c1a2f08d1b9fe8a2772cb5ba036e7f95c39a90c32cfb"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/login.php",
+            "size": 2707,
+            "hash": "7e32e368a472262f3d817caf2a5066d63e8404a32ea14d99d6cb939c2ca7bfcd"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/signup.php",
+            "size": 8377,
+            "hash": "f3620a222382304fdbf8533bf07af7f6c8ef4c3d0567e6774034ea23efbcf711"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/style.css",
+            "size": 3683,
+            "hash": "09b804b724a20ce4f1a929222a0d0c0327b061208466219a1c2979f99fe892c5"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/welcome.php",
+            "size": 1172,
+            "hash": "86b41e85723f90d858f305bd14e87615a56b33adb56e63d2dac2bf770c7fc63d"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/welcome_style.css",
+            "size": 2297,
+            "hash": "a12d4df53f210df465368565470ecbe67725bf99d8cdc674b3f66e64e0f8f9ac"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/login_signup_page/workout"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/php/Connection"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/calculIMC.html",
+            "size": 883,
+            "hash": "b1d59a8365067397d4ffb69b45e32db31d41e6527553904979b1bf064d5634a6"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/calculIMC.php",
+            "size": 140,
+            "hash": "9dea92495bec837cda25709c9364a78b082e41c7a3482e343aa792ed286a4a47"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/calcul_IMC.php",
+            "size": 3902,
+            "hash": "a28df93985a1f28610e49d7697f40252e34423ad9c6c2cfe354013bb162daa36"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/connexion.php",
+            "size": 195,
+            "hash": "98b9c14b6b84cd803c2d9010e9eb423c662294097f9c9b6bfe85444057d36642"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/converteurPHP.html",
+            "size": 1579,
+            "hash": "285fd316fdac3be2012563ac5cfaf46a7ba5d54eae2346050b9b901444fd63ce"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/converteurPHP.php",
+            "size": 1603,
+            "hash": "c3a7f8c3f3362d803bbc05f6685afebeed53d7b554546ea6257a89b7fe753eb1"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/inscription.php",
+            "size": 1021,
+            "hash": "d2620f506ab702ef641d49919a385d3ece885e3d1c3dcda1842427a62b841039"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/surfaceTriangle.php",
+            "size": 180,
+            "hash": "0f783af430e3d2bf4328f70bef225452e7b7296819c4cf51343525db847064b2"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/table_multiplication.php",
+            "size": 1590,
+            "hash": "22d328bdd4b0fbf10226495dd0a4391e52dac2c7fb8b2c638a5e6cff5a7b3148"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/volume_pyramide.php",
+            "size": 1591,
+            "hash": "283da004dd0d567c40cae5b9c35ef091fd109743f66b34800048826f63c9026e"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/style/style.css",
+            "size": 1823,
+            "hash": "e0e2f3eec7f524cb605fb5131625699806eb0fde2a8fd742d4f4095dab9cacaa"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/EchellesSerpents2Joueurs.html",
+            "size": 1555,
+            "hash": "68ad89b160c27e70cdd48d41e7b516f12d6e24fad3a48f462f65a4c414c08cf2"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/calculIMC.html",
+            "size": 2475,
+            "hash": "166faaa8f1fff0bc9e32dde6adf3467161fe81bede7e7efef1ad16c012a3cc72"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/chifimi_v2.0.html",
+            "size": 1187,
+            "hash": "28f5630d07f93da1f2f4ba293c909283a47f89b731d7fb2a918ca38abcc1b194"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/converteurJS.html",
+            "size": 2104,
+            "hash": "0d5d6fe80989bbb553129ffaf300fc7b2ceee252bf005532190c69bbe514ba21"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/convertuerJS.html",
+            "size": 1474,
+            "hash": "831d1d0e0be45213f314e740826d4afde6b83c77c9848325e8a94903d54a3151"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/echelleSerpents.html",
+            "size": 1009,
+            "hash": "8e112cde6d03cc3c05a891cfc579884469c3f0f2dec8ba41bbc40fbfbebe42d2"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/evaluation2.py",
+            "size": 477,
+            "hash": "c0beeef539b7baabfa3d925582b62631b238707b83c43905de761ab87cf19ff6"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/evaluation3.html",
+            "size": 578,
+            "hash": "33b6e11377b9a3a8a476ce9371568f66181bd3a628228946664c592147f243f1"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n1.html",
+            "size": 6723,
+            "hash": "5bd61eb62681e621c97be594eb74465ba0e3e94c0678e023bf0680ce9e71284e"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n10.html",
+            "size": 6989,
+            "hash": "40d3e05ddc14f6f63fdcff634b6ddc8b5da6c0d4bc185a67c6799d556303ee46"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n2.html",
+            "size": 1897,
+            "hash": "700255add71fe8a241c05c4aa7a0f98ce594c29dc8ef41c761d325fac9ae68b8"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n3.html",
+            "size": 2309,
+            "hash": "5f832a5ccd2bbd68b1731bdc344702f4e6502565553e4dcfb62721d876726103"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n4.html",
+            "size": 2403,
+            "hash": "64424646f7745983fd82c5f6d5f6a00f8a8eac180c695ef28461bac7eec67fe1"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n5.html",
+            "size": 1312,
+            "hash": "c385990e74d5810f082ce9b01bf4a369a1696779f35e4e12bad14b76e7b35d48"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n6.html",
+            "size": 892,
+            "hash": "03f1dcddfb4e99c3eac061f5539c0e26bca6c0f35b3d90205c9aed208604d43c"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n7.html",
+            "size": 816,
+            "hash": "d4e874b5993fca999e0eca91296a0e3c4e69ff9e8c723023d3303f120b351678"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n8.html",
+            "size": 2860,
+            "hash": "da29061d8a3efc4e7867e46b1cbb57a55d51daf2bbbc10e1e68c89d010f2c025"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/flexbox.html",
+            "size": 205,
+            "hash": "aaa7ae8ca3bca72c2642ecc577e2a8a8bee4e7492b1c8f967f6262e7437f32be"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/exercice_n9.html",
+            "size": 6324,
+            "hash": "b8d8573bfc60f094377e3a936a1ec251a413c5be031c82d1218b21e666336208"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/hello_test.html",
+            "size": 3086,
+            "hash": "96ca606d31145c46038bf360ab60125e2708ea4f2bc0cbdeece1b269ba4a0592"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/inscription.html",
+            "size": 7762,
+            "hash": "715e11db37929cb1143bd77d25a24525d2c18e26eaf68fe3deb582e9c4036f47"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/inscription_ancien.html",
+            "size": 2127,
+            "hash": "96d58e25bdaa74d0698231d614c03b89d5e019a8af061055a70097132edbb0ea"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/leJeuDames.html",
+            "size": 10665,
+            "hash": "bdd798a083bfa33d56b4ee4aae6f78a80f6cf2777025e3b5ac02b1fe4a3f0195"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/media.html",
+            "size": 639,
+            "hash": "dd02330b38312c872ea74754e3d2aef5d77ae066679dd10302c7d29c896c2fcd"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/rpg.html",
+            "size": 8968,
+            "hash": "2ceeb064906fd480affa421af65c4b0c1c81b3f80339947dfbe3bc27c94ca260"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/somme2Nombre.html",
+            "size": 3598,
+            "hash": "03150377723e0c6599d818d33befaaf247ce14900ee5c9c0e86de4e1dd444cf8"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/somme2Nombre_nouvelleMiseAJour.html",
+            "size": 5430,
+            "hash": "870a213e7cce6c638d09e7acd7ed415aa913c4d050d639124e1332eaa237583a"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/surfaceTriangle.html",
+            "size": 1735,
+            "hash": "3c2ac192356341020654e18ff2dfc5df8f564a165980789d94b351ca7e11f72f"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/table_multiplication.html",
+            "size": 3155,
+            "hash": "fea88f768178bfe1cb49162fb592d8a59ed7834f3326a922a00cdbe570894a90"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/all_exercices/volume_pyramide.html",
+            "size": 3211,
+            "hash": "29d59e7dd30bf941bdd9ce528188e6758371f18c602e74e5135c1a7104fe6219"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/README.md",
+            "size": 527,
+            "hash": "cbfbe5e6959e450cff16d9d30bc8d4469e29d183b69fc4cc862c93eba2a184ae"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/index.html",
+            "size": 14816,
+            "hash": "922626937d8d7629a219e371febd7a661360ab98686b3a696f5e6f1993516657"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/script.js",
+            "size": 6791,
+            "hash": "dc46fa6cc3123bf914518662cd51847cb0aedb64791fda3ee315a6c626cc7d7b"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/style.css",
+            "size": 5357,
+            "hash": "f32da21697490524b8ecec510d389a83339c2b485ee437fad3a8ce6d1711e645"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/bishop.png",
+            "size": 66435,
+            "hash": "8f29f7caf52613d44875154e39198870cc0646feea3c4497ec7f7c57ce232b81"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/king.png",
+            "size": 73918,
+            "hash": "9ed473910e17636e00a4c2cbf91b5aef757a7e66eebc2d1c200a8ae672a25fba"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/knight.png",
+            "size": 72037,
+            "hash": "d69d029342752a98da1e374ae24521681b2c47da644f84e064c7183b0a4c8913"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/queen.png",
+            "size": 79386,
+            "hash": "530616680f42ac7f021d0e31223fce0db666228193ab46639623c6c2b4c35d97"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/pawn.png",
+            "size": 38557,
+            "hash": "3693137d9e54a9c11269f98e02e27f793136938bff410cd549d98316d56eaeb4"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/rook.png",
+            "size": 65126,
+            "hash": "c102fdca2ec54480d03a083de5d98d511ea06b95a0b5a7273bc11d88e83cbbc7"
+        },
+        {
+            "type": "folder",
+            "name": "login_signup_page/user_logged/image/icons/white_chess"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/extra_staf/loading_page_when_signup.html",
+            "size": 2240,
+            "hash": "511a489e872e003b9a4395b930fe3ab0843966a30a7436dd7b48da7779e18cc3"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/login_signup_page/workout/index.php",
+            "size": 859,
+            "hash": "770eb07c346d460322d59bddc5b1c4f0da56237a8690c81ca134f82bbf2dd273"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/Connection/connection.php",
+            "size": 827,
+            "hash": "1b75a294494e84d687a729132d12d9deb26285af199180434baca0967326442a"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/Connection/connection_success.html",
+            "size": 275,
+            "hash": "95f100e4d11a62962498e10ef44a4c80dd629dab87c4cf8a5e65033a525f5c13"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/php/Connection/connection.html",
+            "size": 1802,
+            "hash": "50a707a7de26f4516c0cbbdb207c6898132c36a08e99725d21566d6b2702020b"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/Alson GC.jpg",
+            "size": 64125,
+            "hash": "79055d48ec67d5ac2f0f079b721ce5f3c46fc6a12f571c8cab44d795f0a8bc2c"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/Sarita Limbu.jpg",
+            "size": 58407,
+            "hash": "c4ed520ee79eebaa30066776223dc73a51fd34b713ed25dc671bb83305d85659"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/Sonal Gharti.jpg",
+            "size": 86237,
+            "hash": "2acd3a7a327a0e4f492b980a0eb382e7b817e82561bac07760381d5dafb649fd"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/csv.png",
+            "size": 16417,
+            "hash": "139601c7788d42ab7321c1b45224d5a373c517cfe0b81e09523dc4fc488120bd"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/excel.png",
+            "size": 14713,
+            "hash": "af5bb421d1164a43ac24a684eef6f48b585d9f85636d88044b7b674ec8b727c5"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/exercice01.png",
+            "size": 1540839,
+            "hash": "cace65479f8f0ab469726361b720ada20dbb074783ee6c5604fa05453ac6132c"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/export.png",
+            "size": 5012,
+            "hash": "036dae26f9296a93595a9bb7745baeb16f49d5aa182f0ef67d9f5cf9077781c6"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/html_table.jpg",
+            "size": 533183,
+            "hash": "2086c565bf668180668bc7267d8f9e7b1058dbab3b1a3b9db1eccdcb70daef86"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/json.png",
+            "size": 19196,
+            "hash": "db923f335601dfa07fd6673b5696dceb4511db47ded39471fb3fa715499cf27e"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/pdf.png",
+            "size": 11827,
+            "hash": "c5dbc6a99759ea764b45a7fff2462ec641ad6c510028aab465652f15349e1142"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/screenshot.jpg",
+            "size": 147673,
+            "hash": "3741f415b8a28743f4c74925ac4b08344912ca784d55b406b7c49618b19d73a1"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/html/les_pages_exercices/images/search.png",
+            "size": 24983,
+            "hash": "7500f965fc0d12846912637137c74c3dd6532cbf9b667d58f11fe35571803a16"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/white_chess/king.png",
+            "size": 64957,
+            "hash": "7b3897768071a02baf2c92c4eff43939b2ddf9c024213bcaae283f560318d1e9"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/white_chess/bishop.png",
+            "size": 57332,
+            "hash": "98a7fc561d832663b4f0b16ac0e68f94305518e015fc6ae2a5c0e9abb005322c"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/white_chess/knight.png",
+            "size": 65818,
+            "hash": "39f1b509512fed3f39e8b896a61db78484fdda92bb38a85ea2f0a68a478cbcc6"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/white_chess/pawn.png",
+            "size": 34536,
+            "hash": "40112945f2a62ff9e225e47fc91eca061fe16b3d2dfa3edf237146665ec2c3cc"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/white_chess/queen.png",
+            "size": 65545,
+            "hash": "e34cc83fc30bcea4956ad71e239db3af3846501da50db34c02132ffbd3d815fd"
+        },
+        {
+            "type": "file",
+            "name": "login_signup_page/user_logged/image/icons/white_chess/rook.png",
+            "size": 61547,
+            "hash": "6d75a9107f8ca28d5e04a97846c40d4c93580e8e4031a5b63c4e84754ac66d22"
+        }
+    ]
+}
