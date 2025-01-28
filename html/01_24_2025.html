@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Exemple de formulaire HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="url"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin-top: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemple de formulaire HTML</h1>
+    <form>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name">
+
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" name="password">
+
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email">
+
+        <label for="website">Site Web :</label>
+        <input type="url" id="website" name="website">
+
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">Heure :</label>
+        <input type="time" id="time" name="time">
+
+        <label for="quantity">Quantité :</label>
+        <select id="quantity" name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <label for="country">Pays :</label>
+        <select id="country" name="country">
+            <option value="france">France</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="germany">Germany</option>
+        </select>
+
+        <label>Genre :</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="display: inline;">Homme</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="display: inline;">Femme</label>
+
+        <label>Centres d'intérêt :</label>
+        <input type="checkbox" id="sport" name="interest" value="sport">
+        <label for="sport" style="display: inline;">Sport</label>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music" style="display: inline;">Musique</label>
+        <input type="checkbox" id="reading" name="interest" value="reading">
+        <label for="reading" style="display: inline;">Lecture</label>
+
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Réinitialiser">
+    </form>
+</body>
+</html>
