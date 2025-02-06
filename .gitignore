@@ -1,0 +1,18 @@
+# Database credentials
+systexp/pizza/secure/identifiant.php
+**/identifiant.php
+
+# PHP-specific files
+vendor/
+composer.lock
+.env
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
