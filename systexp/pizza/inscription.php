@@ -47,3 +47,6 @@
     Mail : <input type="email" name="mail" value="<?php echo $_POST['mail'] ?? "";?>"><br>
     Mot de passe: <input type="password" name="mdp" value="<?php echo $_POST['mdp'] ?? "";?>"><br>
     <button type="submit">Inscription</button>
+
+
+

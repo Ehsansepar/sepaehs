@@ -17,6 +17,8 @@ if (isset($_POST['mail'])) {
         $_SESSION["email"] = $email;
         $_SESSION["nom"] = $results[0]['nom'];
         $_SESSION["prenom"] = $results[0]['prenom'];
+        $_SESSION["userID"] = $results[0]['id'];
+        
         header('Location: index.php');
         die();
     } else {

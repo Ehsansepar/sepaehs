@@ -95,6 +95,7 @@ session_start();
         <?php if (isset($_SESSION['email'])) : ?>
             <div class="welcome-message">
                 Bienvenue <?php echo $_SESSION['prenom'] . ' ' . $_SESSION['nom']; ?> !
+                <br><?php echo '<a href="commande.php"> <button> Nouvelle Commande </button> </a>'; ?>
             </div>
             <button class="logout-btn" onclick="window.location.href='logout.php'">Déconnexion</button>
         <?php else : ?>
