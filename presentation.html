@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Continental Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #0f1c3f;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .slide {
+            width: 100%;
+            min-height: 100vh;
+            padding: 2rem 0;
+            background: linear-gradient(135deg, #0f1c3f 0%, #1a2c56 100%);
+            position: relative;
+        }
+        
+        .slide-container {
+            width: 1280px;
+            max-width: 90%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .title {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37; /* Gold color */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .accent {
+            color: #a31c35; /* Burgundy color */
+        }
+        
+        .gold-border {
+            border: 2px solid #d4af37;
+        }
+        
+        .ornament {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            /* background-image: url('https://i.imgur.com/6XL9f0P.png'); */
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.15;
+        }
+        
+        .keyword-box {
+            background-color: rgba(15, 28, 63, 0.7);
+            border-left: 3px solid #d4af37;
+        }
+        
+        .dish-card, .ingredient-card, .service-card, .recommendation-card {
+            background-color: rgba(15, 28, 63, 0.6);
+            transition: transform 0.3s ease;
+        }
+        
+        .dish-card:hover, .ingredient-card:hover, .service-card:hover, .recommendation-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-tag {
+            background-color: rgba(164, 28, 53, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border-radius: 4px;
+            padding: 4px 12px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .price-section {
+            background-color: rgba(15, 28, 63, 0.8);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .icon-circle {
+            background-color: rgba(163, 28, 53, 0.2);
+            border: 1px solid #a31c35;
+            color: #d4af37;
+            border-radius: 50%;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .testimonial {
+            background-color: rgba(15, 28, 63, 0.8);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+        }
+        
+        .star-rating {
+            color: #d4af37;
+        }
+        
+        .highlight-box {
+            background-color: rgba(163, 28, 53, 0.2);
+            border: 1px solid #a31c35;
+        }
+        
+        .gold-text {
+            color: #d4af37;
+        }
+        
+        .badge {
+            background-color: #a31c35;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .thank-you-box {
+            background-color: rgba(15, 28, 63, 0.6);
+            border: 1px solid rgba(212, 175, 55, 0.5);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+        
+        .contact-badge {
+            background-color: rgba(163, 28, 53, 0.2);
+            border: 1px solid #a31c35;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .quote-box {
+            background: linear-gradient(to right, rgba(212, 175, 55, 0.1), rgba(212, 175, 55, 0.05), rgba(212, 175, 55, 0.1));
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        /* Navigation buttons */
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+        
+        .nav-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .nav-button.active {
+            background-color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation buttons -->
+    <div class="nav-buttons">
+        <div class="nav-button active" data-slide="0"></div>
+        <div class="nav-button" data-slide="1"></div>
+        <div class="nav-button" data-slide="2"></div>
+        <div class="nav-button" data-slide="3"></div>
+        <div class="nav-button" data-slide="4"></div>
+        <div class="nav-button" data-slide="5"></div>
+        <div class="nav-button" data-slide="6"></div>
+    </div>
+
+    <!-- Slide 1 -->
+    <section class="slide" id="slide-1">
+        <div class="slide-container">
+            <!-- Background ornaments -->
+            <div class="ornament top-0 left-0 transform rotate-180"></div>
+            <div class="ornament top-0 right-0 transform -rotate-90"></div>
+            <div class="ornament bottom-0 left-0 transform rotate-90"></div>
+            <div class="ornament bottom-0 right-0"></div>
+            
+            <!-- Content -->
+            <div class="flex flex-col items-center justify-center h-full py-10 px-16 z-10">
+                <!-- Title -->
+                <h1 class="title text-6xl font-bold mb-8 text-center tracking-wide">TAJ CONTINENTAL</h1>
+                <h3 class="text-2xl mb-12 tracking-widest text-gray-300">KABUL • AFGHANISTAN</h3>
+                
+                <!-- Main Image -->
+                <div class="relative mb-8 gold-border p-1">
+                    <img src="https://tajcontinental.com/wp-content/uploads/2024/02/VIP-Room-1-scaled-1.webp" alt="Taj Continental Hall" class="w-full max-h-96 object-cover">
+                </div>
+                
+                <!-- Keywords -->
+                <div class="flex justify-center space-x-12 mt-4">
+                    <div class="text-center">
+                        <p class="accent text-xl font-semibold mb-1">LOCATION</p>
+                        <p class="text-lg text-gray-300">Baraki Square, Kabul, Afghanistan</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="accent text-xl font-semibold mb-1">ESTABLISHED</p>
+                        <p class="text-lg text-gray-300">2019</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="accent text-xl font-semibold mb-1">SPECIALTY</p>
+                        <p class="text-lg text-gray-300">Afghan Cuisine</p>
+                    </div>
+                    <div class="text-center">
+                        <p class="accent text-xl font-semibold mb-1">TYPE</p>
+                        <p class="text-lg text-gray-300">Restaurant & Wedding Hall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide" id="slide-2">
+        <div class="slide-container">
+            <!-- Background ornaments -->
+            <div class="ornament top-0 left-0 transform rotate-180"></div>
+            <div class="ornament top-0 right-0 transform -rotate-90"></div>
+            <div class="ornament bottom-0 left-0 transform rotate-90"></div>
+            <div class="ornament bottom-0 right-0"></div>
+            
+            <!-- Content -->
+            <div class="flex flex-col h-full py-10 px-16 z-10">
+                <!-- Title -->
+                <h2 class="title text-4xl font-bold mb-8 text-center">DECORATION</h2>
+                
+                <!-- Main Content: 3 columns with images and keywords -->
+                <div class="flex justify-between h-full">
+                    <!-- Column 1: Faryal Hall -->
+                    <div class="w-1/3 px-4 flex flex-col">
+                        <div class="gold-border p-1 mb-4">
+                            <img src="https://tajcontinental.com/wp-content/uploads/2024/12/ee.webp" alt="Faryal Hall" class="w-full h-64 object-cover">
+                        </div>
+                        <h3 class="accent text-xl font-semibold mb-2 text-center">FARYAL HALL</h3>
+                        <ul class="keyword-box py-3 px-4 space-y-2 text-lg">
+                            <li>Capacity: 800 guests</li>
+                            <li>Separate entrances</li>
+                            <!-- <li>Crystal chandeliers</li> -->
+                            <li>Royal decor</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2: VIP Room -->
+                    <div class="w-1/3 px-4 flex flex-col">
+                        <div class="gold-border p-1 mb-4">
+                            <img src="https://tajcontinental.com/wp-content/uploads/2024/02/VIP-Room-1-scaled-1.webp" alt="VIP Room" class="w-full h-64 object-cover">
+                        </div>
+                        <h3 class="accent text-xl font-semibold mb-2 text-center">VIP</h3>
+                        <ul class="keyword-box py-3 px-4 space-y-2 text-lg">
+                            <li>Luxurious Decoration</li>
+                            <li>Great service</li>
+                            <li>Private dining</li>
+                            <li>Elegant atmosphere</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3: Main Restaurant -->
+                    <div class="w-1/3 px-4 flex flex-col">
+                        <div class="gold-border p-1 mb-4">
+                            <img src="https://tajcontinental.com/wp-content/uploads/2024/12/5.webp" alt="Main Restaurant Area" class="w-full h-64 object-cover">
+                        </div>
+                        <h3 class="accent text-xl font-semibold mb-2 text-center">MAIN RESTAURANT</h3>
+                        <ul class="keyword-box py-3 px-4 space-y-2 text-lg">
+                            <li>Traditional design</li>
+                            <li>Afghan Designe</li> 
+                            <li>Comfortable seating</li>
+                            <li>Open dining concept</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Bottom Keywords about overall ambiance -->
+                <div class="mt-6 flex justify-center space-x-8">
+                    <div class="text-center px-5 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gold">GRAND</span>
+                    </div>
+                    <div class="text-center px-5 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gold">ELEGANT</span>
+                    </div>
+                    <div class="text-center px-5 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gold">TRADITIONAL</span>
+                    </div>
+                    <div class="text-center px-5 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gold">LUXURIOUS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide" id="slide-3">
+        <div class="slide-container">
+            <!-- Background ornaments -->
+            <div class="ornament top-0 left-0 transform rotate-180"></div>
+            <div class="ornament top-0 right-0 transform -rotate-90"></div>
+            <div class="ornament bottom-0 left-0 transform rotate-90"></div>
+            <div class="ornament bottom-0 right-0"></div>
+            
+            <!-- Content -->
+            <div class="flex flex-col h-full py-8 px-16 z-10">
+                <!-- Title -->
+                <h2 class="title text-4xl font-bold mb-6 text-center">TRADITIONAL AFGHAN FOODS</h2>
+                
+                <!-- Main Content: Grid of dishes -->
+                <div class="grid grid-cols-3 gap-6 mb-4">
+                    <!-- Dish 1: Kabuli Pulao -->
+                    <div class="dish-card rounded-lg overflow-hidden shadow-lg">
+                        <div class="gold-border">
+                            <img src="https://themarkaz.org/wp-content/uploads/2023/06/kabuli-pulao-courtesy-@AzzyShahzzy-Twitter.jpg" alt="Kabuli Pulao" class="w-full h-44 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="accent text-xl font-bold mb-2">KABULI PULAO</h3>
+                            <ul class="text-sm space-y-1 text-gray-300">
+                                <li>• National dish</li>
+                                <li>• Rice with carrots, raisins, lamb</li>
+                                <li>• Afghan spices</li>
+                                <li>• Signature specialty</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Dish 2: Mantu -->
+                    <div class="dish-card rounded-lg overflow-hidden shadow-lg">
+                        <div class="gold-border">
+                            <img src="https://culturecollective.unrefugees.org/wp-content/uploads/2022/11/ZCYJMRHIM6md2hAH-1024x683.jpg" alt="Mantu" class="w-full h-44 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="accent text-xl font-bold mb-2">MANTU</h3>
+                            <ul class="text-sm space-y-1 text-gray-300">
+                                <li>• Steamed dumplings</li>
+                                <li>• Minced meat, onions</li>
+                                <li>• Yogurt, mint garnish</li>
+                                <li>• Hand-crafted daily</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Dish 3: Bolani -->
+                    <div class="dish-card rounded-lg overflow-hidden shadow-lg">
+                        <div class="gold-border">
+                            <img src="https://images.squarespace-cdn.com/content/v1/5e2e09cc10214c6701360d94/51104d61-3d74-4c80-ba9c-723cf44fc65e/Bolani.jpg" alt="Bolani" class="w-full h-44 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="accent text-xl font-bold mb-2">BOLANI</h3>
+                            <ul class="text-sm space-y-1 text-gray-300">
+                                <li>• Stuffed flatbread</li>
+                                <li>• Potato, leek, pumpkin fillings</li>
+                                <li>• Served with Chakney</li>
+                                <li>• Perfect appetizer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Dish 4: Ashak -->
+                    <div class="dish-card rounded-lg overflow-hidden shadow-lg">
+                        <div class="gold-border">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Afghan_Ashak_dumplings.jpg/1200px-Afghan_Ashak_dumplings.jpg" alt="Ashak" class="w-full h-44 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="accent text-xl font-bold mb-2">ASHAK</h3>
+                            <ul class="text-sm space-y-1 text-gray-300">
+                                <li>• Leek-filled dumplings</li>
+                                <li>• Tomato-based meat sauce</li>
+                                <li>• Mint-yogurt drizzle</li>
+                                <li>• Special occasion dish</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Dish 5: Kebab -->
+                    <div class="dish-card rounded-lg overflow-hidden shadow-lg">
+                        <div class="gold-border">
+                            <img src="https://cookingcounty.top/wp-content/uploads/2024/01/most-popular-afghan-food.webp" alt="Kebab" class="w-full h-44 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="accent text-xl font-bold mb-2">KEBAB</h3>
+                            <ul class="text-sm space-y-1 text-gray-300">
+                                <li>• Premium cuts of meat</li>
+                                <!-- <li>• Marinated 24 hours</li>
+                                <li>• Grilled to perfection</li> -->
+                                <li>• Served with naan</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Dish 6: Desserts -->
+                    <div class="dish-card rounded-lg overflow-hidden shadow-lg">
+                        <div class="gold-border">
+                            <!-- <img src="https://culturecollective.unrefugees.org/wp-content/uploads/2022/11/ZCYJMRHIM6md2hAH-1024x683.jpg" alt="Afghan Food" class="w-full h-44 object-cover"> -->
+                            <img src="https://c.rewe-static.de/30230368/8/30230368.png?impolicy=rds&im=Resize,width=1480" alt="Afghan Food" class="w-full h-44 object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="accent text-xl font-bold mb-2">DESSERTS</h3>
+                            <ul class="text-sm space-y-1 text-gray-300">
+                                <li>• Firni (milk pudding)</li>
+                                <li>• Sheer Yakh (ice cream)</li>
+                                <li>• Gosh-e-Feel (pastry)</li>
+                                <li>• Homemade recipes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Keywords about cuisine -->
+                <div class="mt-2 flex justify-center space-x-10">
+                    <div class="text-center px-6 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gray-200">FRESH INGREDIENTS</span>
+                    </div>
+                    <div class="text-center px-6 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gray-200">AUTHENTIC RECIPES</span>
+                    </div>
+                    <div class="text-center px-6 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gray-200">TRADITIONAL FLAVORS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide" id="slide-4">
+        <div class="slide-container">
+            <!-- Background ornaments -->
+            <div class="ornament top-0 left-0 transform rotate-180"></div>
+            <div class="ornament top-0 right-0 transform -rotate-90"></div>
+            <div class="ornament bottom-0 left-0 transform rotate-90"></div>
+            <div class="ornament bottom-0 right-0"></div>
+            
+            <!-- Content -->
+            <div class="flex flex-col h-full py-8 px-16 z-10">
+                <!-- Title -->
+                <h2 class="title text-4xl font-bold mb-6 text-center">FRESH INGREDIENTS & PRICING</h2>
+                
+                <!-- Main Content: Two columns layout -->
+                <div class="flex h-full">
+                    <!-- Left Column: Premium Ingredients -->
+                    <div class="w-1/2 pr-8">
+                        <h3 class="accent text-2xl font-semibold mb-4">PREMIUM INGREDIENTS</h3>
+                        
+                        <!-- Ingredient Grid -->
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <!-- Ingredient 1 -->
+                            <div class="ingredient-card rounded p-3 flex items-center">
+                                <!-- <img src="https://cdn-icons-png.flaticon.com/512/2548/2548536.png" alt="Saffron" class="w-12 h-12 mr-3"> -->
+                                <img src="data:image/jpeg;base64,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" alt="Saffron" class="w-12 h-12 mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gold">SAFFRON</h4>
+                                    <p class="text-sm text-gray-300">Imported from Herat</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Ingredient 2 -->
+                            <div class="ingredient-card rounded p-3 flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3076/3076114.png" alt="Lamb" class="w-12 h-12 mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gold">PREMIUM LAMB</h4>
+                                    <p class="text-sm text-gray-300">Local Afghan farms</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Ingredient 3 -->
+                            <div class="ingredient-card rounded p-3 flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3823/3823303.png" alt="Rice" class="w-12 h-12 mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gold">RICE</h4>
+                                    <p class="text-sm text-gray-300">Finest long-grain</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Ingredient 4 -->
+                            <div class="ingredient-card rounded p-3 flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1514/1514935.png" alt="Dried Fruits" class="w-12 h-12 mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gold">DRIED FRUITS</h4>
+                                    <p class="text-sm text-gray-300">Kandahar raisins</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Ingredient 5 -->
+                            <div class="ingredient-card rounded p-3 flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2553/2553691.png" alt="Nuts" class="w-12 h-12 mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gold">NUTS</h4>
+                                    <p class="text-sm text-gray-300">Pistachios, almonds</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Ingredient 6 -->
+                            <div class="ingredient-card rounded p-3 flex items-center">
+                                <img src="https://cdn-icons-png.flaticon.com/512/2515/2515203.png" alt="Spices" class="w-12 h-12 mr-3">
+                                <div>
+                                    <h4 class="font-bold text-gold">SPICE</h4>
+                                    <p class="text-sm text-gray-300">Traditional Afghan mix</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Sourcing Information -->
+                        <div class="bg-opacity-70 bg-black p-4 rounded-lg">
+                            <h4 class="font-semibold text-xl mb-2 text-center accent">INGREDIENT SOURCING</h4>
+                            <ul class="text-sm space-y-1 text-gray-300">
+                                <li>• Local Afghan farmers partnerships</li>
+                                <li>• Daily fresh produce deliveries</li>
+                                <li>• Traditional family recipes</li>
+                                <li>• Organic options available</li>
+                                <li>• Sustainable farming practices</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Pricing Information -->
+                    <div class="w-1/2 pl-8">
+                        <!-- Image with price overlay -->
+                        <div class="gold-border p-1 mb-6 relative">
+                            <img src="https://themarkaz.org/wp-content/uploads/2023/06/afghan-cuisine-courtesy-DURKHANAI-AYUBIS-AFGHAN-TABLE.jpg" alt="Afghan Feast" class="w-full h-56 object-cover">
+                            <!-- <div class="price-tag">
+                                FEAST PLATTER: 1500 AFN
+                            </div> -->
+                        </div>
+                        
+                        <!-- Price Categories -->
+                        <div class="space-y-4">
+                            <!-- Main Dishes -->
+                            <div class="price-section rounded-lg p-4">
+                                <h3 class="accent text-xl font-bold mb-3">MAIN DISHES</h3>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="flex justify-between">
+                                        <span>Kabuli Pulao</span>
+                                        <span class="font-bold text-gold">450-650 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Mantu (6 pcs)</span>
+                                        <span class="font-bold text-gold">380 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Chicken Kebab</span>
+                                        <span class="font-bold text-gold">420 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Lamb Kebab</span>
+                                        <span class="font-bold text-gold">550 AFN</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Appetizers -->
+                            <div class="price-section rounded-lg p-4">
+                                <h3 class="accent text-xl font-bold mb-3">APPETIZERS</h3>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="flex justify-between">
+                                        <span>Bolani</span>
+                                        <span class="font-bold text-gold">220 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Ashak (4 pcs)</span>
+                                        <span class="font-bold text-gold">300 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Afghan Salad</span>
+                                        <span class="font-bold text-gold">150 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Sabzi</span>
+                                        <span class="font-bold text-gold">250 AFN</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Desserts & Beverages -->
+                            <div class="price-section rounded-lg p-4">
+                                <h3 class="accent text-xl font-bold mb-3">DESSERTS & BEVERAGES</h3>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="flex justify-between">
+                                        <span>Firni</span>
+                                        <span class="font-bold text-gold">180 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Afghan Tea</span>
+                                        <span class="font-bold text-gold">80 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Gosh-e-Feel</span>
+                                        <span class="font-bold text-gold">200 AFN</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Fresh Juices</span>
+                                        <span class="font-bold text-gold">120 AFN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Footer Note -->
+                        <div class="mt-4 text-center">
+                            <p class="text-sm italic text-gray-400">Currency: 1 USD ≈ 85 AFN (Afghan Afghani) • Special group rates available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide" id="slide-5">
+        <div class="slide-container">
+            <!-- Background ornaments -->
+            <div class="ornament top-0 left-0 transform rotate-180"></div>
+            <div class="ornament top-0 right-0 transform -rotate-90"></div>
+            <div class="ornament bottom-0 left-0 transform rotate-90"></div>
+            <div class="ornament bottom-0 right-0"></div>
+            
+            <!-- Content -->
+            <div class="flex flex-col h-full py-8 px-16 z-10">
+                <!-- Title -->
+                <h2 class="title text-4xl font-bold mb-6 text-center">EXCEPTIONAL SERVICE</h2>
+                
+                <!-- Main Content: Two columns layout -->
+                <div class="flex h-full">
+                    <!-- Left Column: Service Features -->
+                    <div class="w-1/2 pr-8">
+                        <h3 class="accent text-2xl font-semibold mb-4">SERVICE EXCELLENCE</h3>
+                        
+                        <!-- Service Features -->
+                        <div class="space-y-4 mb-6">
+                            <!-- Feature 1 -->
+                            <div class="service-card rounded p-4 flex items-center">
+                                <div class="icon-circle mr-4">
+                                    <i class="fas fa-user-tie text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl text-gold">PROFESSIONAL STAFF</h4>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <li>• Multilingual (Dari, Pashto, English)</li>
+                                        <li>• Formal training</li>
+                                        <li>• Traditional Afghan hospitality</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Feature 2 -->
+                            <div class="service-card rounded p-4 flex items-center">
+                                <div class="icon-circle mr-4">
+                                    <i class="fas fa-concierge-bell text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl text-gold">PERSONALIZED ATTENTION</h4>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <!-- <li>• Dedicated servers per table</li> -->
+                                        <!-- <li>• Customized meal recommendations</li> -->
+                                        <li>• Customized meal recommendations</li>
+                                        <!-- <li>• Special dietary accommodations</li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Feature 3 -->
+                            <div class="service-card rounded p-4 flex items-center">
+                                <div class="icon-circle mr-4">
+                                    <i class="fas fa-clock text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl text-gold">SERVICE</h4>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <li>• Quick seating</li>
+                                        <li>• Kind</li>
+                                        <li>• Fast</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Feature 4 -->
+                            <div class="service-card rounded p-4 flex items-center">
+                                <div class="icon-circle mr-4">
+                                    <i class="fas fa-hands-helping text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl text-gold">EXTRA</h4>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <li>• Complimentary Afghan tea</li>
+                                        <li>• parking</li>
+                                        <li>• Private dining arrangements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Image and Testimonials -->
+                    <div class="w-1/2 pl-8 flex flex-col">
+                        <!-- Staff Image -->
+                        <div class="gold-border p-1 mb-6">
+                            <img src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/516211554Server.jpg=ws1280x960" alt="Professional Service Staff" class="w-full h-64 object-cover">
+                        </div>
+                        
+                        <!-- Testimonials -->
+                        <!-- <h3 class="accent text-2xl font-semibold mb-4">GUEST EXPERIENCES</h3> -->
+                        <div class="space-y-4">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial p-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-bold text-lg"></h4>
+                                    <div class="star-rating">
+                                        <!-- <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> -->
+                                    </div>
+                                </div>
+                                <p class="text-sm italic text-gray-300">"Staff went above and beyond - explained each dish, its history and preparation"</p>
+                            </div>
+                            
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial p-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <h4 class="font-bold text-lg"></h4>
+                                    <div class="star-rating">
+                                        <!-- <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i> -->
+                                    </div>
+                                </div>
+                                <p class="text-sm italic text-gray-300">"Seamless service for our corporate event - accommodated 50 guests with personalized attention"</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Hours Information -->
+                        <div class="mt-6 bg-opacity-70 bg-black p-4 rounded-lg">
+                            <h4 class="font-semibold text-xl mb-2 text-center accent">HOURS OF SERVICE</h4>
+                            <div class="grid grid-cols-2 gap-2 text-sm text-center">
+                                <div>
+                                    <p class="font-bold text-gold">RESTAURANT</p>
+                                    <p class="text-gray-300">Lunch: 11:30 AM - 3:00 PM</p>
+                                    <p class="text-gray-300">Dinner: 6:00 PM - 11:00 PM</p>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-gold">SPECIAL EVENTS</p>
+                                    <p class="text-gray-300">Available 24/7</p>
+                                    <p class="text-gray-300">Reservation required</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Keywords -->
+                <div class="mt-4 flex justify-center space-x-10">
+                    <div class="text-center px-6 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gray-200">ATTENTIVE</span>
+                    </div>
+                    <!-- <div class="text-center px-6 py-2 bg-opacity-50 bg-black rounded-full"> -->
+                        <!-- <span class="text-lg font-semibold text-gray-200">COURTEOUS</span> -->
+                    <!-- </div> -->
+                    <div class="text-center px-6 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gray-200">PROFESSIONAL</span>
+                    </div>
+                    <div class="text-center px-6 py-2 bg-opacity-50 bg-black rounded-full">
+                        <span class="text-lg font-semibold text-gray-200">MEMORABLE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 6 -->
+    <section class="slide" id="slide-6">
+        <div class="slide-container">
+            <!-- Background ornaments -->
+            <div class="ornament top-0 left-0 transform rotate-180"></div>
+            <div class="ornament top-0 right-0 transform -rotate-90"></div>
+            <div class="ornament bottom-0 left-0 transform rotate-90"></div>
+            <div class="ornament bottom-0 right-0"></div>
+            
+            <!-- Content -->
+            <div class="flex flex-col h-full py-8 px-16 z-10">
+                <!-- Title -->
+                <h2 class="title text-4xl font-bold mb-6 text-center">OUR RECOMMENDATIONS</h2>
+                
+                <!-- Main Content: Two columns layout -->
+                <div class="flex h-full">
+                    <!-- Left Column: Recommended Experiences -->
+                    <div class="w-1/2 pr-8">
+                        <h3 class="accent text-2xl font-semibold mb-4">BEST EXPERIENCES</h3>
+                        
+                        <!-- Recommended Experiences -->
+                        <div class="space-y-4 mb-6">
+                            <!-- Experience 1 -->
+                            <div class="recommendation-card rounded p-4 flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-utensils text-2xl gold-text"></i>
+                                </div>
+                                <div>
+                                    <div class="flex items-center">
+                                        <h4 class="font-bold text-xl gold-text">SIGNATURE TASTING</h4>
+                                        <span class="badge ml-2">MUST TRY</span>
+                                    </div>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <li>• Chef's selection of dishes</li>
+                                        <li>• Experience authentic Afghan flavors</li>
+                                        <li>• Perfect for first-time visitors</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Experience 2 -->
+                            <div class="recommendation-card rounded p-4 flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-calendar-alt text-2xl gold-text"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl gold-text">SPECIAL OCCASIONS</h4>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <li>• Faryal Hall for celebrations</li>
+                                        <li>• VIP Lounge for business dinners</li>
+                                        <li>• Custom event planning available</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Experience 3 -->
+                            <div class="recommendation-card rounded p-4 flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-moon text-2xl gold-text"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl gold-text">EVENING DINING</h4>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <li>• Romantic atmosphere after sunset</li>
+                                        <li>• Traditional music performances</li>
+                                        <li>• Special dinner menu options</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Experience 4 -->
+                            <div class="recommendation-card rounded p-4 flex items-start">
+                                <div class="mr-4 mt-1">
+                                    <i class="fas fa-users text-2xl gold-text"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl gold-text">GROUP GATHERINGS</h4>
+                                    <ul class="text-sm text-gray-300 mt-1">
+                                        <li>• Family-style sharing platters</li>
+                                        <li>• Private dining areas</li>
+                                        <li>• Group discounts available</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Must-Try Dishes and Contact Info -->
+                    <div class="w-1/2 pl-8 flex flex-col">
+                        <!-- Top Dishes -->
+                        <h3 class="accent text-2xl font-semibold mb-4">MUST-TRY DISHES</h3>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <!-- Dish 1 -->
+                            <div class="relative overflow-hidden rounded-lg gold-border">
+                                <img src="https://themarkaz.org/wp-content/uploads/2023/06/kabuli-pulao-courtesy-@AzzyShahzzy-Twitter.jpg" alt="Kabuli Pulao" class="w-full h-32 object-cover">
+                                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2">
+                                    <p class="font-bold text-center gold-text">KABULI PULAO</p>
+                                    <p class="text-xs text-center text-gray-300">Signature dish</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Dish 2 -->
+                            <div class="relative overflow-hidden rounded-lg gold-border">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Afghan_Ashak_dumplings.jpg/1200px-Afghan_Ashak_dumplings.jpg" alt="Ashak" class="w-full h-32 object-cover">
+                                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2">
+                                    <p class="font-bold text-center gold-text">ASHAK</p>
+                                    <p class="text-xs text-center text-gray-300">Chef's favorite</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Dish 3 -->
+                            <div class="relative overflow-hidden rounded-lg gold-border">
+                                <img src="https://cookingcounty.top/wp-content/uploads/2024/01/most-popular-afghan-food.webp" alt="Kebab" class="w-full h-32 object-cover">
+                                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2">
+                                    <p class="font-bold text-center gold-text">MIXED KEBAB</p>
+                                    <p class="text-xs text-center text-gray-300">Most popular</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Dish 4 -->
+                            <div class="relative overflow-hidden rounded-lg gold-border">
+                                <img src="https://culturecollective.unrefugees.org/wp-content/uploads/2022/11/ZCYJMRHIM6md2hAH-1024x683.jpg" alt="Mantu" class="w-full h-32 object-cover">
+                                <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 p-2">
+                                    <p class="font-bold text-center gold-text">MANTU</p>
+                                    <p class="text-xs text-center text-gray-300">Guest favorite</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Reservations & Contact Info -->
+                        <div class="highlight-box rounded-lg p-6 mt-2">
+                            <h4 class="font-bold text-xl text-center gold-text mb-4">MAKE YOUR RESERVATION</h4>
+                            
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div>
+                                    <i class="fas fa-phone-alt text-xl accent mb-2"></i>
+                                    <p class="font-semibold">CALL US</p>
+                                    <!-- <p class="text-gray-300">+93 78 287 8787</p>
+                                    <p class="text-gray-300">+93 79 917 1715</p> -->
+                                </div>
+                                
+                                <div>
+                                    <i class="fas fa-map-marker-alt text-xl accent mb-2"></i>
+                                    <p class="font-semibold">FIND US</p>
+                                    <p class="text-gray-300">Baraki Square</p>
+                                    <p class="text-gray-300">Kabul, Afghanistan</p>
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="text-center mt-4">
+                                <i class="fas fa-globe text-xl accent mb-2"></i>
+                                <p class="font-semibold">WEBSITE</p>
+                                <p class="text-gray-300">tajcontinental.com</p>
+                            </div> -->
+                            
+                            <p class="text-sm text-center mt-4 italic text-gray-400">Advance booking recommended for weekends and special events</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Footer Quote -->
+                <div class="mt-4 text-center">
+                    <p class="text-lg italic">"<span class="gold-text">Experience the royal treatment of traditional Afghan hospitality</span>"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 7 -->
+    <section class="slide" id="slide-7">
+        <div class="slide-container">
+            <!-- Background ornaments -->
+            <div class="ornament top-0 left-0 transform rotate-180"></div>
+            <div class="ornament top-0 right-0 transform -rotate-90"></div>
+            <div class="ornament bottom-0 left-0 transform rotate-90"></div>
+            <div class="ornament bottom-0 right-0"></div>
+            
+            <!-- Content -->
+            <div class="flex flex-col h-full py-10 px-16 z-10">
+                <!-- Title -->
+                <h2 class="title text-5xl font-bold mb-4 text-center">THANK YOU</h2>
+                <!-- <p class="text-xl text-center text-gray-300 mb-8">for joining us on this culinary journey</p> -->
+                
+                <!-- Main Content: Central Image with Summary Points -->
+                <div class="flex h-full">
+                    <!-- Left Column: Summary Points -->
+                    <div class="w-1/3 pr-6 flex flex-col justify-center">
+                        <div class="highlight-section rounded p-5 mb-6">
+                            <h3 class="accent text-2xl font-semibold mb-3">REMEMBER</h3>
+                            <ul class="space-y-3 text-gray-200">
+                                <li class="flex items-start">
+                                    <i class="fas fa-gem text-gold-text mr-3 mt-1"></i>
+                                    <span>Luxurious venue at Baraki Square</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-utensils text-gold-text mr-3 mt-1"></i>
+                                    <span>Authentic Afghan cuisine</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-award text-gold-text mr-3 mt-1"></i>
+                                    <span>Premium ingredients & preparation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-concierge-bell text-gold-text mr-3 mt-1"></i>
+                                    <span>Exceptional service standards</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Center: Main Image -->
+                    <div class="w-1/3 px-4 flex flex-col items-center justify-center">
+                        <div class="gold-border p-1 mb-6">
+                            <img src="https://tajcontinental.com/wp-content/uploads/2024/02/VIP-Room-1-scaled-1.webp" alt="Taj Continental Main Hall" class="w-full h-64 object-cover">
+                        </div>
+                        
+                        <div class="thank-you-box p-5 rounded-lg text-center">
+                            <h3 class="gold-text text-2xl font-bold mb-2">TAJ CONTINENTAL</h3>
+                            <p class="text-gray-300">A royal dining experience</p>
+                            <p class="text-gray-300">in the heart of Kabul</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Contact Information -->
+                    <div class="w-1/3 pl-6 flex flex-col justify-center">
+                        <div class="highlight-section rounded p-5 mb-4">
+                            <!-- <h3 class="accent text-2xl font-semibold mb-3">VISIT US</h3> -->
+                            
+                            <div class="space-y-4">
+                                <div class="contact-badge p-3 flex items-center">
+                                    <i class="fas fa-map-marker-alt text-xl gold-text mr-3"></i>
+                                    <div>
+                                        <p class="font-semibold">LOCATION</p>
+                                        <p class="text-sm text-gray-300">Baraki Square, Kabul</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-badge p-3 flex items-center">
+                                    <i class="fas fa-phone-alt text-xl gold-text mr-3"></i>
+                                    <div>
+                                        <p class="font-semibold">RESERVATIONS REQUIRED</p>
+                                        <!-- <p class="text-sm text-gray-300">+93 78 287 8787</p> -->
+                                    </div>
+                                </div>
+                                
+                                <!-- <div class="contact-badge p-3 flex items-center">
+                                    <i class="fas fa-globe text-xl gold-text mr-3"></i>
+                                    <div>
+                                        <p class="font-semibold">WEBSITE</p>
+                                        <p class="text-sm text-gray-300">tajcontinental.com</p>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Quote -->
+                <div class="quote-box py-5 px-8 mt-auto">
+                    <p class="text-xl italic text-center">
+                        "<span class="gold-text">Discover the taste of Afghanistan's heritage in every bite.</span> 
+                        <span class="text-lg">We look forward to welcoming you soon!</span>"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Navigation functionality
+        const navButtons = document.querySelectorAll('.nav-button');
+        const slides = document.querySelectorAll('.slide');
+        
+        navButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                window.scrollTo({
+                    top: document.getElementById(`slide-${index + 1}`).offsetTop,
+                    behavior: 'smooth'
+                });
+                
+                // Update active button
+                navButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+        
+        // Update active button on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            slides.forEach((slide, index) => {
+                const slideTop = slide.offsetTop;
+                const slideHeight = slide.clientHeight;
+                if (pageYOffset >= (slideTop - slideHeight / 3)) {
+                    current = index;
+                }
+            });
+            
+            navButtons.forEach((button, index) => {
+                button.classList.remove('active');
+                if (index === current) {
+                    button.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
