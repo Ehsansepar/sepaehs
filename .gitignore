@@ -16,3 +16,4 @@ composer.lock
 # OS-specific files
 .DS_Store
 Thumbs.db
+sync_config.jsonc

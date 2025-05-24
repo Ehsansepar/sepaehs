@@ -1,4 +1,4 @@
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <?php
 if(isset($_SESSION["email"])) {
     
@@ -9,7 +9,6 @@ if(isset($_SESSION["email"])) {
 else {
     //On est pas connecté
     ?>
-    <a href="login.php">Connexion</a>
-    <a href="inscription.php">Inscription</a>
+    <a href="login.php">Connexion</a> | <a href="inscription.php">Inscription</a>
     <?php
 }
